@@ -9,7 +9,7 @@ interface ISelect {
 const Select: FC<ISelect> = ({ name }) => {
   return (
     <div>
-      <Button name={name} className="w-fit h-fit" icon="select" IconClassName="w-[24px] h-[24px] rotate-90" />
+      <Button name={name} className="w-fit h-fit" icon="select" iconClassName="w-[24px] h-[24px] rotate-90" />
     </div>
   );
 };

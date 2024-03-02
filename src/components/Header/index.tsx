@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Logo from "../Logo";
 import Select from "../Select";
+import Button from "../Button";
 
 const Header: FC = () => {
   return (
@@ -20,6 +21,7 @@ const Header: FC = () => {
             Publications
           </a>
           <Select name={"Company"} />
+          <Button name={'Contact us'} className={'bg-[#009462] text-white '} />
         </div>
       </div>
     </div>

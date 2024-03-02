@@ -1,8 +1,8 @@
-import { FC } from "react";
-import Company from "../pages/company";
-import Home from "../pages/home";
-import { Route, Routes } from "react-router-dom";
-import Header from "../components/Header";
+import { FC } from 'react';
+import Company from '../pages/company';
+import Home from '../pages/home';
+import { Route, Routes } from 'react-router-dom';
+import Header from '../components/Header';
 
 interface IPages {
   path: string;
@@ -11,13 +11,13 @@ interface IPages {
 
 const pages: IPages[] = [
   {
-    path: "/",
-    page: Home,
+    path: '/',
+    page: Home
   },
   {
-    path: "/company",
-    page: Company,
-  },
+    path: '/company',
+    page: Company
+  }
 ];
 
 const Router = () => {

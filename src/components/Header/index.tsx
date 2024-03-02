@@ -1,7 +1,7 @@
-import { FC } from "react";
-import Logo from "../Logo";
-import Select from "../Select";
-import Button from "../Button";
+import { FC } from 'react';
+import Logo from '../Logo';
+import Select from '../Select';
+import Button from '../Button';
 
 const Header: FC = () => {
   return (
@@ -14,13 +14,13 @@ const Header: FC = () => {
           <a href="/" className="text-white text-[16px] font-medium">
             Home
           </a>
-          <Select name={"Company"} />
-          <Select name={"Services"} />
-          <Select name={"CDISC"} />
+          <Select name={'Company'} />
+          <Select name={'Services'} />
+          <Select name={'CDISC'} />
           <a href="/" className="text-white text-[16px] font-medium">
             Publications
           </a>
-          <Select name={"Company"} />
+          <Select name={'Company'} />
           <Button name={'Contact us'} className={'bg-[#009462] text-white '} />
         </div>
       </div>

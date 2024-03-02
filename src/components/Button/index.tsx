@@ -1,5 +1,5 @@
-import { FC } from "react";
-import Icon from "../Icon";
+import { FC } from 'react';
+import Icon from '../Icon';
 
 interface IButton {
   name: string;

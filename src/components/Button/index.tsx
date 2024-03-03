@@ -10,8 +10,8 @@ interface IButton {
 
 const Button: FC<IButton> = ({ name, icon, className, iconClassName: IconClassName }) => {
   return (
-    <button className={`flex justify-between py-3 px-5 rounded ${className}`}>
-      <p className="text-white text-[16px] font-medium">{name}</p>
+    <button className={`flex justify-between rounded px-5 py-3 ${className}`}>
+      <p className="text-[16px] font-medium text-white">{name}</p>
       {!!icon && <Icon name={icon} className={IconClassName} />}
     </button>
   );

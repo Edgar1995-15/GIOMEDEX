@@ -3,8 +3,22 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      screens: {
+        mobile: { max: '799px' },
+        desktop: { min: '800px' }
+      },
+      maxWidth: {
+        mobile: '360px',
+        desktop: '1440px'
+      },
       fontFamily: {
         sans: ['Inter', 'sans-serif']
+      },
+      fontSize: {
+        title: ['32px', '40px']
+      },
+      colors: {
+        primary: '#595959'
       }
     }
   },

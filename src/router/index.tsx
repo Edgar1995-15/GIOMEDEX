@@ -1,8 +1,10 @@
 import { FC } from 'react';
+import { Route, Routes } from 'react-router-dom';
+
 import Company from '../pages/company';
 import Home from '../pages/home';
-import { Route, Routes } from 'react-router-dom';
 import Header from '../components/Header';
+import Services from '../pages/services';
 
 interface IPages {
   path: string;
@@ -17,6 +19,10 @@ const pages: IPages[] = [
   {
     path: '/company',
     page: Company
+  },
+  {
+    path: '/services',
+    page: Services
   }
 ];
 

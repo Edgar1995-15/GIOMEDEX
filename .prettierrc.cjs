@@ -5,9 +5,10 @@ const config = {
   semi: true,
   singleQuote: true,
   jsxSingleQuote: false,
-  printWidth: 120,
+  printWidth: 100,
   arrowParens: 'always',
   jsxBracketSameLine: false,
+  plugins: ['prettier-plugin-tailwindcss'],
   overrides: [
     {
       files: '**/*.css',

@@ -5,19 +5,19 @@ import Button from '../Button';
 
 const Header: FC = () => {
   return (
-    <div className="w-screen bg-gradient-to-r from-[#080D12] to-[#102136] flex justify-center">
-      <div className="w-[1440px] h-[92px] py-6 px-11 flex items-center justify-between">
-        <div className="w-[20%] flex justify-start">
+    <div className="flex w-screen justify-center bg-gradient-to-r from-[#080D12] to-[#102136]">
+      <div className="flex h-[92px] w-[1440px] items-center justify-between px-11 py-6">
+        <div className="flex w-[20%] justify-start">
           <Logo />
         </div>
-        <div className="w-[80%] flex justify-center items-center gap-11">
-          <a href="/" className="text-white text-[16px] font-medium">
+        <div className="flex w-[80%] items-center justify-center gap-11">
+          <a href="/" className="text-[16px] font-medium text-white">
             Home
           </a>
           <Select name={'Company'} />
           <Select name={'Services'} />
           <Select name={'CDISC'} />
-          <a href="/" className="text-white text-[16px] font-medium">
+          <a href="/" className="text-[16px] font-medium text-white">
             Publications
           </a>
           <Select name={'Company'} />

@@ -5,6 +5,8 @@ import Company from '../pages/company';
 import Home from '../pages/home';
 import Header from '../components/Header';
 import Services from '../pages/services';
+import FooterHomePage from '../components/Footer/FooterHomePage';
+import Footer from '../components/Footer';
 
 interface IPages {
   path: string;
@@ -32,9 +34,17 @@ const Router = () => {
       <Header />
       <Routes>
         {pages.map((el: IPages) => (
-          <Route key={el.path} path={el.path} element={<el.page />} />
+            <Route key={el.path} path={el.path} element={<el.page />} />
         ))}
       </Routes>
+      {
+        window.location.pathname === '/' ? (
+          <FooterHomePage />
+        ) :
+        (
+          <Footer />
+        )
+      }
     </>
   );
 };

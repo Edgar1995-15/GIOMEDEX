@@ -6,13 +6,14 @@ interface IButton {
   icon?: string;
   iconClassName?: string;
   className: string;
+  onClick: () => void;
 }
 
-const Button: FC<IButton> = ({ name, icon, className, iconClassName: IconClassName }) => {
+const Button: FC<IButton> = ({ name, icon, className, iconClassName, onClick }) => {
   return (
-    <button className={`flex justify-between rounded px-5 py-3 ${className}`}>
-      <p className="text-[16px] font-medium text-white">{name}</p>
-      {!!icon && <Icon name={icon} className={IconClassName} />}
+    <button onClick={onClick} className={`flex justify-between rounded ${className} text-white`}>
+      <p className={`text-[16px] font-medium`}>{name}</p>
+      {!!icon && <Icon name={icon} className={iconClassName} />}
     </button>
   );
 };

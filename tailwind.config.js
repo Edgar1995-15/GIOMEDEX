@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        mobile: { max: '799px' },
-        desktop: { min: '800px' }
+        mobile: '360px',
+        desktop: '1440px'
       },
       maxWidth: {
         mobile: '360px',

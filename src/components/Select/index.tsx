@@ -1,4 +1,5 @@
-import { FC, useEffect, useState } from 'react';
+import { FC, useEffect, useRef, useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import Button from '../Button';
 import { ISelectProps } from '../../assets/typea';
@@ -14,26 +15,45 @@ interface ISelect {
 
 const Select: FC<ISelect> = ({ name , selectInfo, setSelectOpen, selectOpen}) => {
   const [openSelectChildren, setOpenSelectChildren ] = useState<string | null>(null);
+
+  const selectRef = useRef<HTMLDivElement>(null);
+  const navigate = useNavigate();
+
   const childrenInfo = selectInfo.find((el) => el.title === openSelectChildren)?.children;
 
-  useEffect(() => {
-    if(selectOpen === null) {
+  const onClick = (page:string, id: string) =>{
+    console.log(page,'page', id);
+    navigate(`/${page}`);
+    setSelectOpen(null);
+    setOpenSelectChildren(null);
+  }
+
+  const handleClickOutside = (event: MouseEvent) => {
+    if (selectRef.current && !selectRef.current.contains(event.target as Node)) {
+      setSelectOpen(null);
       setOpenSelectChildren(null);
     }
-  },[selectOpen])
-  
+  };
+
+  useEffect(() => {
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
   return (
-    <div className='relative'>
+    <div className='relative w-full'>
       <Button
         name={name}
-        className="flex flex-nowrap h-fit w-full"
+        className="flex text-nowrap h-fit w-full"
         icon="select"
         iconClassName="w-[24px] h-[24px] rotate-90"
         onClick={() => setSelectOpen(selectOpen === name ? null : name)}
       />
       {
         name === selectOpen && (
-          <div className='absolute w-[308px] h-fit  mt-[34px] bg-[#0B1521] p-[12px] rounded-b'>
+          <div className='absolute w-[308px] h-fit  mt-[34px] bg-[#0B1521] p-[12px] rounded-b' ref={selectRef}>
           {
             selectInfo.map((el, index) => (
             <div 
@@ -46,7 +66,7 @@ const Select: FC<ISelect> = ({ name , selectInfo, setSelectOpen, selectOpen}) =>
                  ${ el.title === openSelectChildren && 'bg-[#009462]' }`} 
                 icon={ el.children ?'select': undefined  }  
                 iconClassName={`w-[24px] h-[24px]`}
-                onClick={() => el.children && setOpenSelectChildren(el.title)}
+                onClick={() => el.children ? setOpenSelectChildren(el.title) :  onClick(name, el.title)  }
                 />
             </div>
             ))
@@ -64,7 +84,7 @@ const Select: FC<ISelect> = ({ name , selectInfo, setSelectOpen, selectOpen}) =>
                           key={index}
                           name={el} 
                           className={`w-full  px-5 py-3 hover:bg-[#009462]`}
-                          onClick={() => {}}
+                          onClick={() => {onClick(name, el)}}
                           />
                         )
                     })

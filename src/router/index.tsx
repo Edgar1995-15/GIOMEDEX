@@ -8,6 +8,8 @@ import Services from '../pages/services';
 import FooterHomePage from '../components/Footer/FooterHomePage';
 import Footer from '../components/Footer';
 import Cdisc from '../pages/cdisc';
+import QualityPolicy from '../pages/quality-policy';
+import ForPartners from '../pages/for-partners';
 
 interface IPages {
   path: string;
@@ -30,6 +32,14 @@ const pages: IPages[] = [
   {
     path: '/cdisc',
     page: Cdisc
+  },
+  {
+    path: '/quality-policy',
+    page: QualityPolicy
+  },
+  {
+    path: '/for-partners',
+    page: ForPartners
   }
 ];
 

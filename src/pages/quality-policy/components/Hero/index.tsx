@@ -15,9 +15,9 @@ const Hero = () => {
       }}
     >
       <div
-        className="mx-auto flex h-full max-w-desktop flex-col px-32 py-[76px]"
+        className="mx-auto flex h-full max-w-desktop flex-col px-32 py-[100px]"
         style={{
-          backgroundImage: 'url("/images/backgroundImages/cdisc-hero-bg.png")',
+          backgroundImage: 'url("/images/backgroundImages/quality-policy-hero-bg.png")',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'

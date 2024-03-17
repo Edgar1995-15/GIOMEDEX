@@ -6,7 +6,7 @@ import Button from '../../../../components/Button';
 const Hero = () => {
   return (
     <div
-      className="h-[382px] w-full"
+      className="h-[454px] w-full"
       style={{
         // background: `url(/images/backgroundImages/cdics-hero-bg.png), linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
         background: `linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
@@ -15,9 +15,9 @@ const Hero = () => {
       }}
     >
       <div
-        className="mx-auto flex h-full max-w-desktop flex-col px-32 py-[76px]"
+        className="mx-auto flex h-full max-w-desktop flex-col px-32 py-[64px]"
         style={{
-          backgroundImage: 'url("/images/backgroundImages/cdisc-hero-bg.png")',
+          backgroundImage: 'url("/images/backgroundImages/for-partners-hero-bg.png")',
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           backgroundRepeat: 'no-repeat'
@@ -31,7 +31,13 @@ const Hero = () => {
           className="text-justify"
         />
         <Typography
-          content={data.header.content}
+          content={data.header.description_one}
+          variant="font-normal"
+          color="text-white"
+          className="mt-9 text-justify"
+        />
+        <Typography
+          content={data.header.description_two}
           variant="font-normal"
           color="text-white"
           className="mt-4 text-justify"

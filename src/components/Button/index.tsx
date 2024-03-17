@@ -12,7 +12,7 @@ interface IButton {
 const Button: FC<IButton> = ({ name, icon, className, iconClassName, onClick }) => {
   return (
     <button onClick={onClick} className={`flex justify-between rounded ${className} text-white`}>
-      <p className={`text-[16px] font-medium`}>{name}</p>
+      <p>{name}</p>
       {!!icon && <Icon name={icon} className={iconClassName} />}
     </button>
   );

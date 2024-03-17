@@ -34,17 +34,10 @@ const Router = () => {
       <Header />
       <Routes>
         {pages.map((el: IPages) => (
-            <Route key={el.path} path={el.path} element={<el.page />} />
+          <Route key={el.path} path={el.path} element={<el.page />} />
         ))}
       </Routes>
-      {
-        window.location.pathname === '/' ? (
-          <FooterHomePage />
-        ) :
-        (
-          <Footer />
-        )
-      }
+      <Footer />
     </>
   );
 };

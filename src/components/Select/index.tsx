@@ -5,7 +5,6 @@ import Button from '../Button';
 import { ISelectProps } from '../../assets/typea';
 // import Icon from '../Icon';
 
-
 interface ISelect {
   name: string;
   selectInfo: ISelectProps[];
@@ -13,20 +12,20 @@ interface ISelect {
   selectOpen: string | null;
 }
 
-const Select: FC<ISelect> = ({ name , selectInfo, setSelectOpen, selectOpen}) => {
-  const [openSelectChildren, setOpenSelectChildren ] = useState<string | null>(null);
+const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) => {
+  const [openSelectChildren, setOpenSelectChildren] = useState<string | null>(null);
 
   const selectRef = useRef<HTMLDivElement>(null);
   const navigate = useNavigate();
 
   const childrenInfo = selectInfo.find((el) => el.title === openSelectChildren)?.children;
 
-  const onClick = (page:string, id: string) =>{
-    console.log(page,'page', id);
+  const onClick = (page: string, id: string) => {
+    console.log(page, 'page', id);
     navigate(`/${page}`);
     setSelectOpen(null);
     setOpenSelectChildren(null);
-  }
+  };
 
   const handleClickOutside = (event: MouseEvent) => {
     if (selectRef.current && !selectRef.current.contains(event.target as Node)) {
@@ -43,58 +42,56 @@ const Select: FC<ISelect> = ({ name , selectInfo, setSelectOpen, selectOpen}) =>
   }, []);
 
   return (
-    <div className='relative w-full'>
+    <div className="relative w-full">
       <Button
         name={name}
-        className="flex text-nowrap h-fit w-full"
+        className="flex h-fit w-full text-nowrap text-[16px] font-medium"
         icon="select"
         iconClassName="w-[24px] h-[24px] rotate-90"
         onClick={() => setSelectOpen(selectOpen === name ? null : name)}
       />
-      {
-        name === selectOpen && (
-          <div className='absolute w-[308px] h-fit  mt-[34px] bg-[#0B1521] p-[12px] rounded-b' ref={selectRef}>
-          {
-            selectInfo.map((el, index) => (
-            <div 
-              key={index}
-            >
-              <Button 
-                name={el.title} 
-                className={`${el.children && selectOpen === 'For Partners' && "flex-row-reverse"}
-                 w-full px-5 py-3 hover:bg-[#009462] hover:bg-opacity-70
-                 ${ el.title === openSelectChildren && 'bg-[#009462]' }`} 
-                icon={ el.children ?'select': undefined  }  
+      {name === selectOpen && (
+        <div
+          className="absolute mt-[34px] h-fit  w-[308px] rounded-b bg-[#0B1521] p-[12px]"
+          ref={selectRef}
+        >
+          {selectInfo.map((el, index) => (
+            <div key={index}>
+              <Button
+                name={el.title}
+                className={`${el.children && selectOpen === 'For Partners' && 'flex-row-reverse'}
+                 w-full px-5 py-3 text-[16px] font-medium hover:bg-[#009462] hover:bg-opacity-70
+                 ${el.title === openSelectChildren && 'bg-[#009462]'}`}
+                icon={el.children ? 'select' : undefined}
                 iconClassName={`w-[24px] h-[24px]`}
-                onClick={() => el.children ? setOpenSelectChildren(el.title) :  onClick(name, el.title)  }
-                />
+                onClick={() =>
+                  el.children ? setOpenSelectChildren(el.title) : onClick(name, el.title)
+                }
+              />
             </div>
-            ))
-          }
-           {
-              !!childrenInfo && (
-                <div className={`absolute top-0 left-[308px] w-[308px] h-fit bg-[#0B1521] p-[12px] rounded-b`} >
-                  {
+          ))}
+          {!!childrenInfo && (
+            <div
+              className={`absolute left-[308px] top-0 h-fit w-[308px] rounded-b bg-[#0B1521] p-[12px]`}
+            >
+              {childrenInfo.map((el, index) => {
+                console.log(222);
 
-                    childrenInfo.map((el, index) => {
-                      console.log(222);
-                      
-                      return (
-                          <Button
-                          key={index}
-                          name={el} 
-                          className={`w-full  px-5 py-3 hover:bg-[#009462]`}
-                          onClick={() => {onClick(name, el)}}
-                          />
-                        )
-                    })
-                  }
-              </div>
-              )
-            }
+                return (
+                  <Button
+                    key={index}
+                    name={el}
+                    className={`w-full  px-5 py-3 text-[16px] font-medium hover:bg-[#009462]`}
+                    onClick={() => {
+                      onClick(name, el);
+                    }}
+                  />
+                );
+              })}
+            </div>
+          )}
         </div>
-        )
-      }
+      )}
     </div>
   );
 };

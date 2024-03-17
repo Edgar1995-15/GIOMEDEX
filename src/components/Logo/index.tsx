@@ -3,7 +3,7 @@ import { FC } from 'react';
 const Logo: FC = () => {
   return (
     <a href="/">
-      <img className="w-[141px] h-[140px] z-0" src={'images/logo.svg'} alt="Logo" />
+      <img className="z-0 h-[140px] w-[141px]" src={'images/logo.svg'} alt="Logo" />
     </a>
   );
 };

@@ -1,0 +1,13 @@
+{
+    "dataManagers": {
+        "title": "Data Managers",
+        "content": "Our data managers are dedicated to ensuring the integrity, accuracy, and completeness of your clinical trial data throughout the entire data lifecycle. With a focus on efficiency and precision, our team leverages industry-leading tools and methodologies to streamline data collection, cleaning, and validation processes, ensuring compliance with regulatory requirements and industry standards.",
+        "wePromise": {
+            "title": "We Promise",
+            "bullet_1": "Expertise in database design and development, tailored to your specific study requirements.",
+            "bullet_2": "Seamless integration with your existing systems and processes, ensuring smooth and efficient data flow.",
+            "bullet_3": "Rigorous data cleaning and validation procedures to identify and resolve discrepancies and errors.",
+            "bullet_4": "Proactive communication and collaboration to keep you informed and engaged at every stage of the process."
+        }
+    }
+}

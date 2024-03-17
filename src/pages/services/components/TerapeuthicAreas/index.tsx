@@ -1,13 +1,11 @@
 import data from './data.json';
 
 import Typography from '../../../../components/Typography';
+import Button from '../../../../components/Button';
 
-const Tree = () => {
+const TerapeuthicAreas = () => {
   return (
-    <div
-      className=" bg-center px-32 py-[54px]"
-      style={{ backgroundImage: `url(/images/services_terapeuthic_reas_bg.svg)` }}
-    >
+    <div className="mx-auto max-w-desktop px-32 py-[54px]">
       {/* Header  */}
       <div>
         <Typography
@@ -162,8 +160,18 @@ const Tree = () => {
           </div>
         </div>
       </div>
+
+      <div className="mt-[54px] flex justify-end">
+        <Button
+          name="Contact us"
+          className={`h-[54px] w-[172px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054]`}
+          icon="select"
+          iconClassName={`w-[24px] h-[24px]`}
+          onClick={() => {}}
+        />
+      </div>
     </div>
   );
 };
 
-export default Tree;
+export default TerapeuthicAreas;

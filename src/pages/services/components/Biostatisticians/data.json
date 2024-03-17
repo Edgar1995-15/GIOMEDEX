@@ -1,0 +1,13 @@
+{
+    "biostatisticians": {
+        "title": "Biostatisticians",
+        "content": "Our team of biostatisticians combines advanced statistical expertise with in-depth knowledge of clinical research methodologies to provide comprehensive support for your research projects. From study design to data analysis and interpretation, our biostatisticians work closely with you to develop customized solutions that address your specific research objectives.",
+        "youGain": {
+            "title": "You Gain",
+            "bullet_1": "Access to experienced biostatisticians with expertise across a wide range of therapeutic areas and study designs.",
+            "bullet_2": "Rigorous quality control measures to ensure the accuracy and reliability of your study results.",
+            "bullet_3": "Advanced statistical methodologies and techniques to uncover meaningful insights from your data.",
+            "bullet_4": "Collaborative partnerships focused on delivering actionable insights that drive informed decision-making."
+        }
+    }
+}

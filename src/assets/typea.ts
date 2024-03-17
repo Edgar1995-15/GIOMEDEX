@@ -1,4 +1,4 @@
 export interface ISelectProps {
-    title : string;
-    children?: string[];
+  title: string;
+  children?: string[];
 }

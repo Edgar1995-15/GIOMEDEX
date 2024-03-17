@@ -1,0 +1,13 @@
+{
+    "statisticalProgrammers": {
+        "title": "Statistical Programmers",
+        "content": "Our statistical programmers bring a wealth of expertise and experience to every project, ensuring accurate and reliable results that meet the standards of quality and integrity. With proficiency in programming languages such as SAS and R, as well as extensive knowledge of industry-standard software platforms, our team delivers customized solutions tailored to your needs.",
+        "weOffer": {
+            "title": "We offer",
+            "bullet_1": "Comprehensive programming support across all phases of clinical research, from study design to analysis and reporting.",
+            "bullet_2": "Commitment to excellence and attention to detail, ensuring the accuracy and reliability of your data analysis.",
+            "bullet_3": "Expertise in data manipulation, validation, and visualization to uncover meaningful insights and drive informed decision-making.",
+            "bullet_4": "Flexibility and adaptability to accommodate evolving project requirements and timelines."
+        }
+    }
+}

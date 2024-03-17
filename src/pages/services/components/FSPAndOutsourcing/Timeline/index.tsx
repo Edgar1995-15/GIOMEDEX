@@ -1,5 +1,5 @@
-import Typography from '../../../../components/Typography';
-import data from '../../data.json';
+import Typography from '../../../../../components/Typography';
+import data from '../data.json';
 
 import styles from './styles.module.css';
 

@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Services from '../pages/services';
 import FooterHomePage from '../components/Footer/FooterHomePage';
 import Footer from '../components/Footer';
+import Cdisc from '../pages/cdisc';
 
 interface IPages {
   path: string;
@@ -25,6 +26,10 @@ const pages: IPages[] = [
   {
     path: '/services',
     page: Services
+  },
+  {
+    path: '/cdisc',
+    page: Cdisc
   }
 ];
 
@@ -34,17 +39,10 @@ const Router = () => {
       <Header />
       <Routes>
         {pages.map((el: IPages) => (
-            <Route key={el.path} path={el.path} element={<el.page />} />
+          <Route key={el.path} path={el.path} element={<el.page />} />
         ))}
       </Routes>
-      {
-        window.location.pathname === '/' ? (
-          <FooterHomePage />
-        ) :
-        (
-          <Footer />
-        )
-      }
+      {window.location.pathname === '/' ? <FooterHomePage /> : <Footer />}
     </>
   );
 };

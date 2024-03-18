@@ -71,27 +71,27 @@ const VacancyInfo: FC = () => {
           <input
             type="text"
             placeholder="Name*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none"
           />
           <input
             type="text"
             placeholder="Last Name*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none"
           />
           <input
             type="text"
             placeholder="Email*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none"
           />
           <input
             type="text"
             placeholder="Phone"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none"
           />
           <textarea
             name=""
             placeholder="Availability*"
-            className="h-[120px] w-full rounded border border-[#B5B5B5] pl-4 pt-4"
+            className="h-[120px] w-full rounded border border-[#B5B5B5] pl-4 pt-4 focus:border-[#00A79D] focus:outline-none"
           ></textarea>
         </div>
         <div className="mt-4 flex justify-between">
@@ -101,7 +101,7 @@ const VacancyInfo: FC = () => {
           >
             <img src="/images/icons/attachments.svg" /> Attachments
           </button>
-          <Button name="Apply now" onClick={() => {}} className="bg-[#009462] px-5 py-3" />
+          <Button name="Apply now" onClick={() => {}} className="bg-[#009462] px-5 py-3 hover:bg-[#008054]" />
         </div>
       </div>
     </div>

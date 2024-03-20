@@ -1,0 +1,90 @@
+{
+    "hero": {
+        "title": "GIOMEDEX CRO",
+        "content": "Empowering Research, Enhancing Lives"
+    },
+    "mission": {
+        "title": "Our Mission",
+        "content": "At GIOMEDEX, our mission is to excel as a trusted partner in clinical data management. We are dedicated to building unwavering loyalty by consistently delivering unparalleled services that drive the dynamics of innovation and precision. We contribute to advancing the field of healthcare and research, ensuring the integrity and efficacy of every clinical study we engage in."
+    },
+    "vision": {
+        "title": "Our Vision",
+        "content": "Our vision at GIOMEDEX is to be a trailblazer in the realms of clinical data management and biostatistics. We aspire to cultivate enduring relationships with our clients, marked by mutual loyalty founded on the reliability and quality of our services. Through innovation, we aim to be at the forefront of transformative advancements in healthcare and research. We envision making meaningful contributions that improve public health and elevate the impact and success of our clients' endeavors."
+    },
+    "principles": {
+        "title": "4 Core Principles",
+        "content": "Trust, Transparency, Flexibility, Quality: At GIOMEDEX, our core values guide our interactions and drive our commitment to excellence. We prioritize trust, ensuring a transparent partnership that adapts to our clients' needs with flexibility, all while maintaining an unwavering focus on delivering quality work."
+    },
+    "know-how": {
+        "title": "Our Know-How",
+        "content1": "GIOMEDEX stands as an experienced partner for government and public health organizations in the fields of statistics, bioinformatics, & data management. Our innovative solutions are strategically designed to address the key priorities of our clients—reducing time to market, cutting costs, and enhancing quality.",
+        "content2": "Proficient in SAS and R programming and tools, we specialize in data analysis, ensuring GLP compliance, and maintaining a deep understanding of 21 CFR Part 11 regulations. Our adept team excels in crafting and reviewing statistical sections of protocols, developing SAP and SAR documents, and consulting with researchers on study design, sample size calculations, and analysis methods for studies of varying complexity.",
+        "content3": "FDA-Approved Data Analyses: We are proud to have contributed to the success of several drugs that have received FDA approval. Our rigorous data analysis processes ensure the highest standards, making us a trusted partner in your journey towards regulatory success"
+    },
+    "whyGiomedex": {
+        "title" : "Why GIOMEDEX?",
+        "content1": "Cost-Effective Solutions: We offer competitive rates that deliver maximum value without compromising on quality. For clients opting to work with R instead of SAS, we have implemented a major savings plan that allows them to achieve significant cost savings while still receiving top-notch service.",
+        "content2": "Compliance and Security: We prioritize data protection regulations and maintain rigorous information security measures. With all necessary SOPs in place and multiple client audits under our belt, you can trust us to safeguard your data.",
+        "content3": "Flexible Contract Negotiations: We're known for our cooperative approach to contract negotiations, ensuring a smooth and mutually beneficial process.",
+        "content4": "Global Reach: With entities in the EU, US, Mexico and the Caucasus Region, we offer global expertise and support tailored to your needs.",
+        "content5": "Client Satisfaction: Our track record speaks for itself. References from our satisfied clients are available upon request, demonstrating our commitment to excellence and customer satisfaction.",
+        "content6": "Value Creation: By ensuring data accuracy, compliance with regulatory standards, and timely delivery of insights, we empower our clients to make informed decisions, accelerate drug development timelines, and ultimately improve patient outcomes."
+    },
+    "career": {
+        "title": "CREATE YOUR SUCCESS CAREER , JOIN US!",
+        "content": "Are you passionate about statistical programming, biostatistics or clinical data management? Are you looking for a dynamic and rewarding career opportunity with a company that values your expertise and fosters your professional growth? Look no further than GIOMEDEX."
+    },
+    "family": {
+        "title": "Our Family",
+        "subtitle": "Unlocking Insights and Driving Excellence",
+        "content": "Introducing the Leadership Team at GIOMEDEX CRO: Our company structure is characterized by a dedicated Board of 3 members, alongside key roles including a CEO, a Quality Standards Representative, and heads of the SAS Programming, Data Management, and Biostatistics departments. Meet the professionals driving our success at GIOMEDEX CRO, where a dynamic team of skilled biostatisticians, SAS and R programmers, and related departments collaborate seamlessly."
+    },
+    "joinUs": {
+        "title": "Join us!",
+        "content": "At GIOMEDEX, we believe that our greatest asset is our people. That's why we are committed to providing our team members with a fantastic human experience, competitive conditions, and a supportive atmosphere where you can thrive and succeed. We understand that work is more than just a job– it's an experience. That's why we strive to create a positive and inclusive work environment where every team member feels valued, respected, and supported. From team-building activities to social events, we foster a sense of belonging that makes coming to work a pleasure.",
+        "subContent": "We understand that work is more than just a job – it's an experience. That's why we strive to create a positive and inclusive work environment where every team member feels valued, respected, and supported. From team-building activities to social events, we foster a sense of camaraderie and belonging that makes coming to work a pleasure."
+    },
+    "benefits": {
+        "title": "Competitive Salary and Benefits",
+        "content": "We believe in recognizing and rewarding the hard work and dedication of our team members. That's why we offer competitive salaries and a comprehensive benefits package that includes health insurance, retirement plans, and more. We also offer flexible work arrangements and other perks to ensure a healthy work-life balance."
+    },
+    "growth": {
+        "title": "Opportunities for Growth",
+        "content": "At GIOMEDEX, we are committed to helping our team members reach their full potential. Whether you are just starting your career or looking to take the next step, we provide opportunities for growth and advancement. From mentorship programs to training and development initiatives, we invest in your success and help you achieve your professional goals."
+    },
+    "development": {
+        "title": "Competency Development",
+        "content": "We understand the importance of staying ahead in a rapidly evolving industry. That's why we provide ongoing training and competency development programs to ensure that our team members are equipped with the latest skills and knowledge. From technical training to leadership development, we support your growth every step of the way."
+    },
+    "biostatistician": {
+        "title": "Biostatistician",
+        "location": "Location: Remote",
+        "position": "Position Type: Full-Time"
+    },
+    "responsibilities": {
+        "title": "Responsibilities:",
+        "text1": "Statistical Analysis Planning: Develop and implement statistical analysis plans for clinical trials, ensuring alignment with study objectives.",
+        "text2": "Data Analysis: Conduct thorough data analysis using SAS and/or R programming, providing statistical insights to support decision-making in clinical development.",
+        "text3": "Protocol Development: Collaborate with cross-functional teams in crafting and reviewing statistical sections of study protocols.",
+        "text4": "Regulatory Compliance: Ensure compliance with relevant regulations, including a deep understanding of 21 CFR Part 11, and contribute to the preparation of regulatory submissions.",
+        "text5": "Clinical Study Reports: Review and provide expertise on statistical sections of Clinical Study Reports, ensuring accuracy and adherence to study objectives",
+        "text6": "Consultation: Provide expert guidance to researchers on study design, sample size calculations, and appropriate statistical methodologies.",
+        "text7": "Project Management: Contribute to project management activities, ensuring timelines and deliverables are met efficiently."
+    },
+    "requirements": {
+        "title": "Requirements:",
+        "text1": "Master's or Ph.D. in Statistics, Biostatistics, or a related field.",
+        "text2": "Proven experience as a Biostatistician in the pharmaceutical or clinical research industry.",
+        "text3": "Proficiency in SAS and/or R programming.Strong knowledge of statistical methodologies, clinical trial design, and regulatory requirements.",
+        "text4": "Excellent communication and collaboration skills."
+    },
+    "vacancyBenefits": {
+        "title": "Benefits:",
+        "text1": "Competitive salary",
+        "text2": "Health and wellness programs",
+        "text3": "Professional development opportunities",
+        "text4": "Flexible work arrangements",
+        "text5": "Collaborative and inclusive culture",
+        "description": "GIOMEDEX is an equal opportunity employer and welcomes candidates from diverse backgrounds If you are a skilled Biostatistician looking to make a significant impact in the clinical research field, we invite you to join our dynamic team. Apply today by submitting your CV and cover letter."
+    }
+}

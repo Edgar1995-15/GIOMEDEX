@@ -8,21 +8,25 @@ export const headersSelectData = {
         'Our Know-How',
         'Value Optimisation',
         'Our Family'
-      ]
+      ],
+      url: 'company',
     },
     {
       title: 'Careers',
-      children: ['Join Us', 'Our Vacancies', 'Internship']
+      children: ['Join Us', 'Our Vacancies', 'Internship'],
+      url: 'company',
     }
   ],
   Services: [
     {
       title: 'Data analysis',
-      children: ['Expertise', 'Sas programming', 'Biostatistics', 'Data Management', 'Software']
+      children: ['Expertise', 'Sas programming', 'Biostatistics', 'Data Management', 'Software'],
+      url: 'services',
     },
     {
       title: 'FSP & OUTSOURCING',
-      children: ['STATISTICAL PROGRAMMERS', 'DATA MANAGERS', 'Biostatisticians']
+      children: ['STATISTICAL PROGRAMMERS', 'DATA MANAGERS', 'Biostatisticians'],
+      url: 'services',
     },
     {
       title: 'Therapeutic Areas',
@@ -36,44 +40,55 @@ export const headersSelectData = {
         'Diabetes',
         'Neurology',
         'Gastroenterology'
-      ]
+      ],
+      url: 'services',
     },
     {
       title: 'Clinical Phases',
-      children: ['Phase I', 'Phase II', 'Phase III', 'Phase IV']
+      children: ['Phase I', 'Phase II', 'Phase III', 'Phase IV'],
+      url: 'services',
     }
   ],
   CDISC: [
     {
-      title: 'SDTM'
+      title: 'SDTM',
+      url: 'cdisc',
     },
     {
-      title: 'ADaM'
+      title: 'ADaM',
+      url: 'cdisc',
     },
     {
-      title: 'TFL'
+      title: 'TFL',
+      url: 'cdisc',
     },
     {
-      title: 'CDASH'
+      title: 'CDASH',
+      url: 'cdisc',
     }
   ],
   'Quality Policy': [
     {
-      title: 'Our Commitments'
+      title: 'Our Commitments',
+      url: 'quality-policy',
     },
     {
-      title: 'KPIs'
+      title: 'KPIs',
+      url: 'quality-policy',
     },
     {
-      title: 'Operating Procedures'
+      title: 'Operating Procedures',
+      url: 'quality-policy',
     }
   ],
   'For Partners': [
     {
-      title: 'Current contracts'
+      title: 'Current contracts',
+      url: 'for-partners',
     },
     {
-      title: 'Long Term Partnership'
+      title: 'Long Term Partnership',
+      url: 'for-partners',
     }
   ]
 };

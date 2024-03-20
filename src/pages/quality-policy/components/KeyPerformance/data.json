@@ -1,0 +1,23 @@
+{
+    "keyPerformance": {
+        "title": "Key Performance Indicators (KPIs)",
+        "content": [
+            {
+                "title": "Data Accuracy",
+                "description": "We prioritize data accuracy as a fundamental KPI, ensuring that all clinical trial data is collected, processed, and analyzed with the utmost precision and reliability."
+            },
+            {
+                "title": "Timelines",
+                "description": "Punctuality: Meeting project timelines and deadlines is essential in the fast-paced world of clinical research. Our team is dedicated to delivering timely results, enabling our clients to make informed decisions and stay ahead of schedule. Our streamlined processes and project management approach allow us to anticipate challenges and mitigate risks."
+            },
+            {
+                "title": "Client Satisfaction",
+                "description": "Client satisfaction is at the forefront of everything we do. We regularly solicit feedback from our clients to gauge their level of satisfaction with our services, allowing us to address any concerns promptly."
+            },
+            {
+                "title": "Compliance",
+                "description": "Ensuring compliance with regulatory requirements and industry standards is a cornerstone of our approach to clinical data management."
+            }
+        ]
+    }
+}

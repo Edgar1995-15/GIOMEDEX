@@ -17,53 +17,14 @@ const Header: FC = () => {
           <Logo />
         </div>
         <div className="flex w-[80%] items-center justify-center gap-[24px]">
-          <Button
-            name={'Home'}
-            className={'bg-transparent text-[16px] font-medium'}
-            onClick={() => navigate('/')}
-          />
-          <Select
-            name={'Company'}
-            selectInfo={headersSelectData.company}
-            setSelectOpen={setSelectOpen}
-            selectOpen={selectOpen}
-          />
-          <Select
-            name={'Services'}
-            selectInfo={headersSelectData.Services}
-            setSelectOpen={setSelectOpen}
-            selectOpen={selectOpen}
-          />
-          <Select
-            name={'CDISC'}
-            selectInfo={headersSelectData.CDISC}
-            setSelectOpen={setSelectOpen}
-            selectOpen={selectOpen}
-          />
-          <Select
-            name={'Quality Policy'}
-            selectInfo={headersSelectData['Quality Policy']}
-            setSelectOpen={setSelectOpen}
-            selectOpen={selectOpen}
-          />
-          <Button
-            name={'Publications'}
-            className={'bg-transparent text-[16px] font-medium'}
-            onClick={() => navigate('/Publications')}
-          />
-          <Select
-            name={'For Partners'}
-            selectInfo={headersSelectData['For Partners']}
-            setSelectOpen={setSelectOpen}
-            selectOpen={selectOpen}
-          />
-          <Button
-            name={'Contact us'}
-            className={
-              'w-full !justify-center text-nowrap bg-[#009462] px-5 py-3 text-[16px] font-medium text-white hover:bg-[#008054]'
-            }
-            onClick={() => navigate('/Contact')}
-          />
+          <Button name={'Home'} className={'bg-transparent'} onClick={() => navigate('/')} />
+          <Select name={'Company'} selectInfo={headersSelectData.company} setSelectOpen={setSelectOpen} selectOpen={selectOpen} />
+          <Select name={'Services'} selectInfo={headersSelectData.Services} setSelectOpen={setSelectOpen} selectOpen={selectOpen} />
+          <Select name={'CDISC'} selectInfo={headersSelectData.CDISC} setSelectOpen={setSelectOpen} selectOpen={selectOpen}  />
+          <Select name={'Quality Policy'} selectInfo={headersSelectData['Quality Policy']} setSelectOpen={setSelectOpen} selectOpen={selectOpen}  />
+          <Button name={'Publications'} className={'bg-transparent'} onClick={() => navigate('/Publications')} />
+          <Select name={'For Partners'} selectInfo={headersSelectData['For Partners']} setSelectOpen={setSelectOpen} selectOpen={selectOpen}  />
+          <Button name={'Contact us'} className={'bg-[#009462] text-white px-5 hover:bg-[#008054] py-3 w-full text-nowrap !justify-center'} onClick={() => navigate('/Contact')} />
         </div>
       </div>
     </div>

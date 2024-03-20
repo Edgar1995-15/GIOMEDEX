@@ -52,7 +52,7 @@ const Router = () => {
           <Route key={el.path} path={el.path} element={<el.page />} />
         ))}
       </Routes>
-      {window.location.pathname === '/' ? <FooterHomePage /> : <Footer />}
+      <Footer />
     </>
   );
 };

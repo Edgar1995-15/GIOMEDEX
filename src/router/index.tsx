@@ -10,6 +10,7 @@ import Footer from '../components/Footer';
 import Cdisc from '../pages/cdisc';
 import QualityPolicy from '../pages/quality-policy';
 import ForPartners from '../pages/for-partners';
+import ContactUs from '../pages/contact-us';
 
 interface IPages {
   path: string;
@@ -40,6 +41,10 @@ const pages: IPages[] = [
   {
     path: '/for-partners',
     page: ForPartners
+  },
+  {
+    path: '/contact',
+    page: ContactUs
   }
 ];
 

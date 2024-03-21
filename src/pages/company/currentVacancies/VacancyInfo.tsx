@@ -20,36 +20,36 @@ const VacancyInfo: FC = () => {
         <Typography content={data.responsibilities.title} color="text-[#00A791]" />
         <ul className="mt-5 list-inside list-disc">
           <li>
-            <Typography content={data.responsibilities.text1} className="inline" />
+            <Typography content={data.responsibilities.text1} className="inline text-justify" />
           </li>
           <li>
-            <Typography content={data.responsibilities.text2} className="inline" />
+            <Typography content={data.responsibilities.text2} className="inline text-justify" />
           </li>
           <li>
-            <Typography content={data.responsibilities.text3} className="inline" />
+            <Typography content={data.responsibilities.text3} className="inline text-justify" />
           </li>
           <li>
-            <Typography content={data.responsibilities.text4} className="inline" />
+            <Typography content={data.responsibilities.text4} className="inline text-justify" />
           </li>
           <li>
-            <Typography content={data.responsibilities.text5} className="inline" />
+            <Typography content={data.responsibilities.text5} className="inline text-justify" />
           </li>
           <li>
-            <Typography content={data.responsibilities.text6} className="inline" />
+            <Typography content={data.responsibilities.text6} className="inline text-justify" />
           </li>
         </ul>
       </div>
       <div className="mt-6">
-        <Typography content={data.requirements.title} color="text-[#00A791]" />
+        <Typography content={data.requirements.title} color="text-[#00A791]" className='text-justify' />
         <ul className="mt-5 list-inside list-disc">
-          <li><Typography content={data.requirements.text1} className="inline" /></li>
+          <li><Typography content={data.requirements.text1} className="inline text-justify" /></li>
           <li>
-              <Typography content={data.requirements.text2} className="inline" />
+              <Typography content={data.requirements.text2} className="inline text-justify" />
           </li>
           <li>
-              <Typography content={data.requirements.text3} className="inline" />
+              <Typography content={data.requirements.text3} className="inline text-justify" />
           </li>
-          <li><Typography content={data.requirements.text4} className="inline" /></li>
+          <li><Typography content={data.requirements.text4} className="inline text-justify" /></li>
         </ul>
       </div>
       <div className="mt-6">
@@ -63,7 +63,7 @@ const VacancyInfo: FC = () => {
         </ul>
       </div>
       <div className="mt-6">
-        <Typography content={data.vacancyBenefits.description} />
+        <Typography content={data.vacancyBenefits.description} className='text-justify' />
       </div>
       <div className="m-auto mt-[83px] max-w-[773px]">
         <p className="text-[24px] font-[500] text-[#00A791]">Apply Here</p>

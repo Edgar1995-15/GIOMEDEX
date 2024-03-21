@@ -7,7 +7,7 @@ const Vacancies: FC = () => {
   return (
     <div
       className="mt-[49px] h-[365px] w-full bg-cover bg-center"
-      style={{ backgroundImage: `url('/images/company/header.jpg')` }}
+      style={{ backgroundImage: `url('/images/company/joinus.png')` }}
     >
       <div className="flex h-full w-full flex-col items-center justify-center">
         <Typography content={data.career.title} size='text-[24px]' color='text-white' variant='font-bold' />

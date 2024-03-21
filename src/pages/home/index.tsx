@@ -3,6 +3,7 @@ import Typography from '../../components/Typography';
 import { homePageData } from '../../assets/data';
 import Button from '../../components/Button';
 import { useNavigate } from 'react-router-dom';
+import Icon from '../../components/Icon';
 
 const Home: FC = () => {
   const navigate = useNavigate();
@@ -20,18 +21,21 @@ const Home: FC = () => {
           <Typography
             content="Empowering Research - Enhancing Lives"
             variant="font-bold"
-            color="text-white"
+            color="text-[#D9D9D9]"
             size="text-[36px] leading-[32px]"
           />
         </div>
         <div>
-          <div className="flex h-[calc(100%_-_100px)] flex-col flex-wrap gap-[16px]">
+          <ul
+            style={{ listStyleType: 'square' }}
+            className="flex h-[calc(100%_-_150px)] flex-col flex-wrap gap-[16px] text-[#D9D9D9]"
+          >
             {homePageData.map((el, index) => (
-              <div key={index}>
-                <Typography content={el} color="text-white" size="text-[20px] leading-[24px]" />
-              </div>
+              <li key={index} style={{ marginBottom: '16px' }}>
+                <Typography content={el} color="text-[#D9D9D9]" size="text-[20px] leading-[24px]" />
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
         <div className="flex gap-4">
           <Button
@@ -46,7 +50,7 @@ const Home: FC = () => {
             className={`h-[54px] w-[172px] items-center border px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054]`}
             icon="select"
             iconClassName={`w-[24px] h-[24px]`}
-            onClick={() => navigate('/Partners')}
+            onClick={() => navigate('/for-partners')}
           />
         </div>
       </div>

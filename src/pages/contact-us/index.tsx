@@ -9,7 +9,7 @@ const ContactUs: FC = () => {
     <div className="w-full">
       <div
         style={{ backgroundImage: 'url("/images/backgroundImages/quality-policy-hero-bg.png")' }}
-        className="h-[382px] w-full bg-slate-500 bg-opacity-85"
+        className="h-[382px] w-full bg-slate-500 bg-opacity-85 bg-cover bg-center"
       >
         <div className="pl-[140px] pt-[137px]">
           <Typography
@@ -26,7 +26,7 @@ const ContactUs: FC = () => {
           />
         </div>
       </div>
-      <div className="m-auto mt-16 flex w-full max-w-[1440px] px-[228px] mb-8">
+      <div className="m-auto mb-8 mt-16 flex w-full max-w-[1440px] px-[228px]">
         <div className="flex w-full flex-col">
           <Typography
             content={data.contactUs.title}
@@ -59,7 +59,7 @@ const ContactUs: FC = () => {
           </ul>
         </div>
         <div className="flex w-full justify-center">
-          <div className="mt-5 flex flex-wrap gap-3 justify-end">
+          <div className="mt-5 flex flex-wrap justify-end gap-3">
             <input
               type="text"
               placeholder="First Name*"
@@ -85,7 +85,11 @@ const ContactUs: FC = () => {
               placeholder="Your Message*"
               className="h-[98px] w-[455px] rounded border border-[#B5B5B5] pl-4 pt-4 focus:border-[#00A79D] focus:outline-none"
             ></textarea>
-            <Button name='Send' className='bg-[#009462] w-[104px] h-[43px] flex !justify-center items-center' onClick={() => {}} />
+            <Button
+              name="Send"
+              className="flex h-[43px] w-[104px] items-center !justify-center bg-[#009462]"
+              onClick={() => {}}
+            />
           </div>
         </div>
       </div>

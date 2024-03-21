@@ -98,6 +98,6 @@ export const homePageData = [
   '9 Exciting Studies in Progress',
   '41 Successful Projects Completed',
   '8 Areas: Urology to Oncology, Neurology to Medical Devices and more',
-  'We use SAS, R, Pinnacle21, Rave, Open Clinica, Veeva, InForm GTM',
+  'We use SAS, R, Pinnacle21, Medidata Rave, Open Clinica, Veeva, InForm GTM',
   'From Stages I to IV: We ensure your success'
 ];

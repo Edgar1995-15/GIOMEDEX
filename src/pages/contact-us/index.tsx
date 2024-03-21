@@ -8,8 +8,8 @@ const ContactUs: FC = () => {
   return (
     <div className="w-full">
       <div
-        style={{ backgroundImage: 'url("/images/backgroundImages/quality-policy-hero-bg.png")' }}
-        className="h-[382px] w-full bg-slate-500 bg-opacity-85"
+        style={{ backgroundImage: 'url("/images/backgroundImages/contact-us.png")' }}
+        className="h-[382px] w-full"
       >
         <div className="pl-[140px] pt-[137px]">
           <Typography

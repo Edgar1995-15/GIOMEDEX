@@ -6,10 +6,10 @@ import Typography from '../../../components/Typography';
 const Family: FC = () => {
   return (
     <div className="mt-14 flex w-full flex-col max-w-[1440px] m-auto">
-      <div className="max-w-[1184px] pl-[133px]">
+      <div className="max-w-[90%] pl-[133px]">
         <Typography content={data.family.title} size='text-[30px]' color='text-[#009462]' variant='font-bold' />
         <Typography content={data.family.subtitle} size='text-[18px]' className='!font-[500] mt-3' />
-        <Typography content={data.family.content} className='mt-6' color='text-[#595959]' />
+        <Typography content={data.family.content} className='mt-6 text-justify' color='text-[#595959]' />
       </div>
       <div className="flex justify-center gap-9 mt-9">
         <Card

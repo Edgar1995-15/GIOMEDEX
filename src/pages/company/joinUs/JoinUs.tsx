@@ -1,12 +1,13 @@
-import { FC } from 'react';
+import { FC, useState } from 'react';
 import Icon from '../../../components/Icon';
 import data from '../data.json';
 import Typography from '../../../components/Typography';
 
 const JoinUs: FC = () => {
+  const [activeTab, setActiveTab] = useState<number>(1);
   return (
     <div className="flex w-full justify-center bg-gradient-to-r from-teal-600 via-teal-800 to-indigo-800">
-      <div className="max-w-[1440px] px-[127px] pt-14">
+      <div className="max-w-[1440px] px-[127px] pt-14 mobileMax:max-w-[324px] mobileMax:px-4">
         <Typography
           content={data.joinUs.title}
           size="text-[30px]"
@@ -21,8 +22,8 @@ const JoinUs: FC = () => {
             className="mt-6 text-justify"
           />
         </div>
-        <div className="mt-9 flex w-full justify-between gap-11">
-          <div className="max-w-[364px]">
+        <div className="mt-9 flex w-full justify-between gap-11 mobileMax:justify-center mobileMax:pb-9">
+          <div className={`max-w-[364px] ${activeTab === 1 ? "" : "mobileMax:hidden"}`}>
             <div className="flex gap-2">
               <Icon name="know-how" />
               <Typography
@@ -39,7 +40,7 @@ const JoinUs: FC = () => {
               color="text-white"
             />
           </div>
-          <div className="mt-10 max-w-[364px]">
+          <div className={`mt-10 max-w-[364px] ${activeTab === 2 ? "" : "mobileMax:hidden"}`}>
             <div className="flex items-center gap-2">
               <Icon name="talanted" />
               <Typography
@@ -56,7 +57,7 @@ const JoinUs: FC = () => {
               color="text-white"
             />
           </div>
-          <div className="max-w-[364px]">
+          <div className={`max-w-[364px] ${activeTab === 3 ? "" : "mobileMax:hidden"}`}>
             <div className="flex items-center gap-2">
               <Icon name="time" />
               <Typography
@@ -73,6 +74,20 @@ const JoinUs: FC = () => {
               className="mt-4 text-justify"
             />
           </div>
+        </div>
+        <div className="m-auto mt-9 hidden gap-2 mobileMax:flex mb-14 justify-center">
+          <div
+            className={`h-[14px] w-[14px] rounded-full border-[2px] border-white ${activeTab === 1 ? 'bg-[#009462]' : 'bg-white'}`}
+            onClick={() => setActiveTab(1)}
+          ></div>
+          <div
+            className={`h-[14px] w-[14px] rounded-full border-[2px] border-white ${activeTab === 2 ? 'bg-[#009462]' : 'bg-white'} bg-[#009462]`}
+            onClick={() => setActiveTab(2)}
+          ></div>
+          <div
+            className={`h-[14px] w-[14px] rounded-full border-[2px] border-white ${activeTab === 3 ? 'bg-[#009462]' : 'bg-white'} bg-[#009462]`}
+            onClick={() => setActiveTab(3)}
+          ></div>
         </div>
       </div>
     </div>

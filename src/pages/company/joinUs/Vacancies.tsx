@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Button from '../../../components/Button';
-import data from "../data.json";
+import data from '../data.json';
 import Typography from '../../../components/Typography';
 
 const Vacancies: FC = () => {
@@ -10,8 +10,16 @@ const Vacancies: FC = () => {
       style={{ backgroundImage: `url('/images/company/joinus.png')` }}
     >
       <div className="flex h-full w-full flex-col items-center justify-center">
-        <Typography content={data.career.title} size='text-[24px]' color='text-white' variant='font-bold' />
-        <Typography content={data.career.content} className='mt-4 max-w-[1014px] text-center text-white' />
+        <Typography
+          content={data.career.title}
+          size="text-[24px]"
+          color="text-white"
+          variant="font-bold"
+        />
+        <Typography
+          content={data.career.content}
+          className="mt-4 max-w-[1014px] text-center text-white"
+        />
         <Button
           name="Vacancies"
           className={`mt-6 h-[54px] w-[150px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054]`}

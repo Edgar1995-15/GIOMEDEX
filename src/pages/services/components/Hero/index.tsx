@@ -1,28 +1,20 @@
+import { useNavigate } from 'react-router-dom';
+
 import data from './data.json';
 
 import Typography from '../../../../components/Typography';
 import Button from '../../../../components/Button';
 
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     <div
-      className="h-[382px] w-full"
+      className="h-[382px] w-full bg-cover bg-center bg-no-repeat"
       style={{
-        background: `linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
-        // backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
+        backgroundImage: 'url("/images/services/hero-bg.png")'
       }}
     >
-      <div
-        className="mx-auto flex h-full max-w-desktop flex-col px-32 py-[76px]"
-        style={{
-          backgroundImage: 'url("/images/backgroundImages/services-header-bg.png")',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-          backgroundRepeat: 'no-repeat'
-        }}
-      >
+      <div className="mx-auto flex h-full max-w-desktop flex-col px-32 py-[76px]">
         <Typography
           content={data.header.title}
           size="text-title"
@@ -42,14 +34,14 @@ const Hero = () => {
             className={`h-[54px] w-[172px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054]`}
             icon="select"
             iconClassName={`w-[24px] h-[24px]`}
-            onClick={() => {}}
+            onClick={() => navigate('/services')}
           />
           <Button
-            name="For Services"
+            name="For Partners"
             className={`h-[54px] w-[172px] items-center border px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054]`}
             icon="select"
             iconClassName={`w-[24px] h-[24px]`}
-            onClick={() => {}}
+            onClick={() => navigate('/for-partners')}
           />
         </div>
       </div>

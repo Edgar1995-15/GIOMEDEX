@@ -20,7 +20,7 @@ const Services = () => {
 
       <div
         style={{
-          background: `url(/images/services-fsp-vector.png), linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
+          background: `url(/images/services/fsp-vector.png), linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}
@@ -37,7 +37,7 @@ const Services = () => {
 
       <div
         style={{
-          background: `url(/images/services-tree-vector.png), linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
+          background: `url(/images/services/terapeuthic-areas-vector.png), linear-gradient(102.82deg, #080D12 19%, #102136 75.38%)`,
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat'
         }}

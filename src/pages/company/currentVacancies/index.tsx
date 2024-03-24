@@ -5,9 +5,9 @@ import VacancyInfo from './VacancyInfo';
 const CurrentVacancies: FC = () => {
   const [isVisible, setIsVisible] = useState<boolean>(false);
   return (
-    <div className="m-auto w-full max-w-[1440px] bg-white pb-10 text-[#595959]">
-      <div className="mt-14 px-[154px]">
-        <p className="text-[32px] font-[800] text-[#3B3B3B]">Current Vacancies</p>
+    <div className="w-full bg-white text-[#595959] max-w-[1440px] m-auto pb-10 mobileMax:max-w-[324px]">
+      <div className="mt-14 px-[154px] mobileMax:px-[18px]">
+        <p className="text-[32px] font-[800] text-[#3B3B3B] mobileMax:text-[24px]">Current Vacancies</p>
         <div onClick={() => setIsVisible(!isVisible)}>
           <Dropdown isVisible={isVisible} />
           {!isVisible && (

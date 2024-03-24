@@ -4,11 +4,12 @@ export default {
   theme: {
     extend: {
       screens: {
-        mobile: '360px',
-        desktop: '1440px'
+        mobile: '768px',
+        desktop: '1440px',
+        mobileMax: {'max': '768px'}
       },
       maxWidth: {
-        mobile: '360px',
+        mobile: '768px',
         desktop: '1440px'
       },
       fontFamily: {

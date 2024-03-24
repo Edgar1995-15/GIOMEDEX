@@ -2,7 +2,7 @@ import Typography from '../../Typography';
 
 const FooterHomePage = () => {
   return (
-    <div className="flex h-[74px] w-screen items-center justify-center bg-[#0B1624]">
+    <div className="flex h-[74px] w-screen items-center justify-center bg-[#0B1624] max-md:hidden">
       <Typography
         content={'All rights reserved.2024 © GIOMEDEX CRO'}
         color="text-white"

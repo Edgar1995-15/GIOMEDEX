@@ -8,7 +8,7 @@ import { ISelectProps } from '../../assets/types';
 interface ISelect {
   name: string;
   selectInfo: ISelectProps[];
-  setSelectOpen: Function;
+  setSelectOpen: (e: string | null) => void;
   selectOpen: string | null;
 }
 interface IOpenSelectChildren {
@@ -26,7 +26,7 @@ const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) =>
 
   const onClick = (page: string, id: string) => {
     console.log(page, 'page', id);
-    navigate(`/${page}`);
+    navigate(`/${page}?id=${id}`);
     setSelectOpen(null);
     setOpenSelectChildren(null);
   };
@@ -49,7 +49,7 @@ const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) =>
     <div className="relative w-full">
       <Button
         name={name}
-        className="flex h-fit w-full text-nowrap"
+        className="flex h-fit w-full text-nowrap max-xl:text-[14px]"
         icon="select"
         iconClassName="w-[24px] h-[24px] rotate-90"
         onClick={() => setSelectOpen(selectOpen === name ? null : name)}
@@ -64,10 +64,10 @@ const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) =>
               <Button
                 name={el.title}
                 className={`${el.children && selectOpen === 'For Partners' && 'flex-row-reverse'}
-                 w-full px-5 py-3 hover:bg-[#009462] hover:bg-opacity-70
+                 w-full px-5 py-3 hover:bg-[#009462] hover:bg-opacity-70 max-xl:text-[14px]
                  ${el.title === openSelectChildren?.name && 'bg-[#009462]'}`}
                 icon={el.children ? 'select' : undefined}
-                iconClassName={`w-[24px] h-[24px]`}
+                iconClassName={`w-[24px] h-[24px] max-xl:h-[20px] max-xl:w-[20px] max-lg:w-[16px] max-lg:h-[16px]`}
                 onClick={() =>
                   el.children
                     ? setOpenSelectChildren({ name: el.title, url: el.url })

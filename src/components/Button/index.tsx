@@ -2,7 +2,7 @@ import { FC } from 'react';
 import Icon from '../Icon';
 
 interface IButton {
-  name: string;
+  name?: string;
   icon?: string;
   iconClassName?: string;
   className: string;
@@ -12,7 +12,7 @@ interface IButton {
 const Button: FC<IButton> = ({ name, icon, className, iconClassName, onClick }) => {
   return (
     <button onClick={onClick} className={`flex justify-between rounded ${className} text-white`}>
-      <p>{name}</p>
+      {!!name && <p>{name}</p>}
       {!!icon && <Icon name={icon} className={iconClassName} />}
     </button>
   );

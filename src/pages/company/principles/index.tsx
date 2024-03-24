@@ -17,9 +17,9 @@ const Principles: FC = () => {
             <Typography content={data['know-how'].title} color='text-[#009462]' variant='font-bold' />
           </div>
           <div className="mt-4 flex max-w-[542px] flex-col gap-9 text-[#595959]">
-            <Typography content={data['know-how'].content1} />
-            <Typography content={data['know-how'].content2} />
-            <Typography content={data['know-how'].content3} />
+            <Typography content={data['know-how'].content1} className='text-justify' />
+            <Typography content={data['know-how'].content2} className='text-justify' />
+            <Typography content={data['know-how'].content3} className='text-justify' />
           </div>
         </div>
         <div>
@@ -28,12 +28,12 @@ const Principles: FC = () => {
             <Typography content={data.whyGiomedex.title} color='text-[#66CAC4]' variant='font-bold' />
           </div>
           <div className="mt-4 flex max-w-[542px] flex-col gap-9 text-[#595959]">
-            <Typography content={data.whyGiomedex.content1} />
-            <Typography content={data.whyGiomedex.content2} />
-            <Typography content={data.whyGiomedex.content3} />
-            <Typography content={data.whyGiomedex.content4} />
-            <Typography content={data.whyGiomedex.content5} />
-            <Typography content={data.whyGiomedex.content6} />
+            <Typography content={data.whyGiomedex.content1} className='text-justify' />
+            <Typography content={data.whyGiomedex.content2} className='text-justify' />
+            <Typography content={data.whyGiomedex.content3} className='text-justify' />
+            <Typography content={data.whyGiomedex.content4} className='text-justify' />
+            <Typography content={data.whyGiomedex.content5} className='text-justify' />
+            <Typography content={data.whyGiomedex.content6} className='text-justify' />
           </div>
         </div>
       </div>

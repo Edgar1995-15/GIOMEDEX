@@ -5,7 +5,6 @@ import Company from '../pages/company';
 import Home from '../pages/home';
 import Header from '../components/Header';
 import Services from '../pages/services';
-import FooterHomePage from '../components/Footer/FooterHomePage';
 import Footer from '../components/Footer';
 import Cdisc from '../pages/cdisc';
 import QualityPolicy from '../pages/quality-policy';

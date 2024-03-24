@@ -40,30 +40,48 @@ const VacancyInfo: FC = () => {
         </ul>
       </div>
       <div className="mt-6">
-        <Typography content={data.requirements.title} color="text-[#00A791]" className='text-justify' />
+        <Typography
+          content={data.requirements.title}
+          color="text-[#00A791]"
+          className="text-justify"
+        />
         <ul className="mt-5 list-inside list-disc">
-          <li><Typography content={data.requirements.text1} className="inline text-justify" /></li>
           <li>
-              <Typography content={data.requirements.text2} className="inline text-justify" />
+            <Typography content={data.requirements.text1} className="inline text-justify" />
           </li>
           <li>
-              <Typography content={data.requirements.text3} className="inline text-justify" />
+            <Typography content={data.requirements.text2} className="inline text-justify" />
           </li>
-          <li><Typography content={data.requirements.text4} className="inline text-justify" /></li>
+          <li>
+            <Typography content={data.requirements.text3} className="inline text-justify" />
+          </li>
+          <li>
+            <Typography content={data.requirements.text4} className="inline text-justify" />
+          </li>
         </ul>
       </div>
       <div className="mt-6">
         <Typography content={data.vacancyBenefits.title} color="text-[#00A791]" />
         <ul className="mt-5 list-inside list-disc">
-          <li><Typography content={data.vacancyBenefits.text1} className="inline" /></li>
-          <li><Typography content={data.vacancyBenefits.text2} className="inline" /></li>
-          <li><Typography content={data.vacancyBenefits.text3} className="inline" /></li>
-          <li><Typography content={data.vacancyBenefits.text4} className="inline" /></li>
-          <li><Typography content={data.vacancyBenefits.text5} className="inline" /></li>
+          <li>
+            <Typography content={data.vacancyBenefits.text1} className="inline" />
+          </li>
+          <li>
+            <Typography content={data.vacancyBenefits.text2} className="inline" />
+          </li>
+          <li>
+            <Typography content={data.vacancyBenefits.text3} className="inline" />
+          </li>
+          <li>
+            <Typography content={data.vacancyBenefits.text4} className="inline" />
+          </li>
+          <li>
+            <Typography content={data.vacancyBenefits.text5} className="inline" />
+          </li>
         </ul>
       </div>
       <div className="mt-6">
-        <Typography content={data.vacancyBenefits.description} className='text-justify' />
+        <Typography content={data.vacancyBenefits.description} className="text-justify" />
       </div>
       <div className="m-auto mt-[83px] max-w-[773px]">
         <p className="text-[24px] font-[500] text-[#00A791]">Apply Here</p>
@@ -101,7 +119,11 @@ const VacancyInfo: FC = () => {
           >
             <img src="/images/icons/attachments.svg" /> Attachments
           </button>
-          <Button name="Apply now" onClick={() => {}} className="bg-[#009462] px-5 py-3 hover:bg-[#008054]" />
+          <Button
+            name="Apply now"
+            onClick={() => {}}
+            className="bg-[#009462] px-5 py-3 hover:bg-[#008054]"
+          />
         </div>
       </div>
     </div>

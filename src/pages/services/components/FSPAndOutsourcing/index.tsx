@@ -1,18 +1,12 @@
 import { FC } from 'react';
-import Typography from '../../../../components/Typography';
-import Timeline from './Timeline';
+
 import data from './data.json';
 
+import Timeline from './Timeline';
+import Typography from '../../../../components/Typography';
+
 const FSPAndOutsourcing: FC = () => (
-  <div
-    className="mx-auto flex max-w-desktop flex-col px-32 py-[54px]"
-    // style={{
-    //   backgroundImage: `url(/images/services-fsp-vector.png)`,
-    //   backgroundSize: 'cover',
-    //   backgroundPosition: 'center',
-    //   backgroundRepeat: 'no-repeat'
-    // }}
-  >
+  <div className="mx-auto flex max-w-desktop flex-col px-32 py-[54px]">
     <Typography
       content={data.fspAndOutsourcing.title}
       size="text-title"

@@ -7,17 +7,17 @@ import Family from './family';
 import JoinUs from './joinUs/JoinUs';
 import CurrentVacancies from './currentVacancies';
 const Company: FC = () => {
-    return (
-        <div className="w-full">
-            <Hero />
-            <Mission />
-            <Principles />
-            <Vacancies />
-            <Family />
-            <JoinUs />
-            <CurrentVacancies />
-        </div>
-    )
-}
+  return (
+    <div className="w-full">
+      <Hero />
+      <Mission />
+      <Principles />
+      <Vacancies />
+      <Family />
+      <JoinUs />
+      <CurrentVacancies />
+    </div>
+  );
+};
 
 export default Company;

@@ -9,24 +9,24 @@ export const headersSelectData = {
         'Value Optimisation',
         'Our Family'
       ],
-      url: 'company',
+      url: 'company'
     },
     {
       title: 'Careers',
       children: ['Join Us', 'Our Vacancies', 'Internship'],
-      url: 'company',
+      url: 'company'
     }
   ],
   Services: [
     {
       title: 'Data analysis',
       children: ['Expertise', 'Sas programming', 'Biostatistics', 'Data Management', 'Software'],
-      url: 'services',
+      url: 'services'
     },
     {
       title: 'FSP & OUTSOURCING',
       children: ['STATISTICAL PROGRAMMERS', 'DATA MANAGERS', 'Biostatisticians'],
-      url: 'services',
+      url: 'services'
     },
     {
       title: 'Therapeutic Areas',
@@ -41,54 +41,54 @@ export const headersSelectData = {
         'Neurology',
         'Gastroenterology'
       ],
-      url: 'services',
+      url: 'services'
     },
     {
       title: 'Clinical Phases',
       children: ['Phase I', 'Phase II', 'Phase III', 'Phase IV'],
-      url: 'services',
+      url: 'services'
     }
   ],
   CDISC: [
     {
       title: 'SDTM',
-      url: 'cdisc',
+      url: 'cdisc'
     },
     {
       title: 'ADaM',
-      url: 'cdisc',
+      url: 'cdisc'
     },
     {
       title: 'TFL',
-      url: 'cdisc',
+      url: 'cdisc'
     },
     {
       title: 'CDASH',
-      url: 'cdisc',
+      url: 'cdisc'
     }
   ],
   'Quality Policy': [
     {
       title: 'Our Commitments',
-      url: 'quality-policy',
+      url: 'quality-policy'
     },
     {
       title: 'KPIs',
-      url: 'quality-policy',
+      url: 'quality-policy'
     },
     {
       title: 'Operating Procedures',
-      url: 'quality-policy',
+      url: 'quality-policy'
     }
   ],
   'For Partners': [
     {
       title: 'Current contracts',
-      url: 'for-partners',
+      url: 'for-partners'
     },
     {
       title: 'Long Term Partnership',
-      url: 'for-partners',
+      url: 'for-partners'
     }
   ]
 };

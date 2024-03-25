@@ -3,11 +3,6 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
-      screens: {
-        mobile: '768px',
-        desktop: '1440px',
-        mobileMax: {'max': '768px'}
-      },
       maxWidth: {
         mobile: '768px',
         desktop: '1440px'

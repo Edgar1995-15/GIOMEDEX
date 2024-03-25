@@ -7,10 +7,10 @@ const Mission: FC = () => {
   const [activeTab, setActiveTab] = useState<number>(1);
   return (
     <div
-      className={`flex min-h-[333px] w-full justify-center bg-gradient-to-br from-[#009462] to-[#3B579D] ${activeTab === 2 ? 'mobileMax:h-[500px]' : 'mobileMax:h-[434px]'}`}
+      className={`flex min-h-[333px] w-full justify-center bg-gradient-to-br from-[#009462] to-[#3B579D] ${activeTab === 2 ? 'max-md:h-[500px]' : 'max-md:h-[434px]'}`}
     >
-      <div className="container mx-32 mt-9 mb-9 flex max-w-[1440px] justify-around gap-10 mobileMax:gap-0 mobileMax:mx-4 mobileMax:max-w-[324px] mobileMax:flex-col mobileMax:justify-center">
-        <div className={`max-w-[526px] ${activeTab === 1 ? '' : 'mobileMax:hidden'}`}>
+      <div className="container mx-32 mt-9 mb-9 flex max-w-[1440px] justify-around gap-10 max-md:gap-0 max-md:mx-4 max-md:max-w-[324px] max-md:flex-col max-md:justify-center">
+        <div className={`max-w-[526px] ${activeTab === 1 ? '' : 'max-md:hidden'}`}>
           <div className="flex items-center gap-2">
             <Icon name="points" />
             <Typography
@@ -25,7 +25,7 @@ const Mission: FC = () => {
           />
         </div>
         <div
-          className={`max-w-[526px] ${activeTab === 2 ? '' : 'mobileMax:hidden'} mobileMax:max-w-full mobileMax:pr-0`}
+          className={`max-w-[526px] ${activeTab === 2 ? '' : 'max-md:hidden'} max-md:max-w-full max-md:pr-0`}
         >
           <div className="flex items-center gap-2">
             <Icon name="points" />
@@ -40,7 +40,7 @@ const Mission: FC = () => {
             className="left-6 mt-4 text-justify text-white"
           />
         </div>
-        <div className="m-auto mt-14 hidden gap-2 mobileMax:flex">
+        <div className="m-auto mt-14 hidden gap-2 max-md:flex">
           <div
             className={`h-[14px] w-[14px] rounded-full border-[2px] border-white ${activeTab === 1 ? 'bg-[#009462]' : 'bg-white'}`}
             onClick={() => setActiveTab(1)}

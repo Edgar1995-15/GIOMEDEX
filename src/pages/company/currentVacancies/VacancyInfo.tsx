@@ -11,14 +11,14 @@ const VacancyInfo: FC = () => {
           content={data.biostatistician.title}
           size="text-[32px]"
           color="text-[#00A79D]"
-          className="!font-[500] mobileMax:text-[20px]"
+          className="!font-[500] max-md:text-[20px]"
         />
-        <Typography content={data.biostatistician.location} className="mt-3 mobileMax:text-[#B5B5B5] mobileMax:text-[14px]" />
-        <Typography content={data.biostatistician.position} className='mobileMax:text-[#B5B5B5] mobileMax:text-[14px]' />
+        <Typography content={data.biostatistician.location} className="mt-3 max-md:text-[#B5B5B5] max-md:text-[14px]" />
+        <Typography content={data.biostatistician.position} className='max-md:text-[#B5B5B5] max-md:text-[14px]' />
       </div>
       <div className="mt-6">
         <Typography content={data.responsibilities.title} color="text-[#00A791]" />
-        <ul className="mt-5 list-inside list-disc mobileMax:list-none">
+        <ul className="mt-5 list-inside list-disc max-md:list-none">
           <li>
             <Typography content={data.responsibilities.text1} className="inline text-justify" />
           </li>
@@ -41,7 +41,7 @@ const VacancyInfo: FC = () => {
       </div>
       <div className="mt-6">
         <Typography content={data.requirements.title} color="text-[#00A791]" className='text-justify' />
-        <ul className="mt-5 list-inside list-disc mobileMax:list-none">
+        <ul className="mt-5 list-inside list-disc max-md:list-none">
           <li><Typography content={data.requirements.text1} className="inline text-justify" /></li>
           <li>
             <Typography content={data.requirements.text1} className="inline text-justify" />
@@ -57,7 +57,7 @@ const VacancyInfo: FC = () => {
           </li>
         </ul>
       </div>
-      <div className="mt-6 mobileMax:hidden">
+      <div className="mt-6 max-md:hidden">
         <Typography content={data.vacancyBenefits.title} color="text-[#00A791]" />
         <ul className="mt-5 list-inside list-disc">
           <li>
@@ -77,7 +77,7 @@ const VacancyInfo: FC = () => {
           </li>
         </ul>
       </div>
-      <div className="mt-6 mobileMax:hidden">
+      <div className="mt-6 max-md:hidden">
         <Typography content={data.vacancyBenefits.description} className='text-justify' />
       </div>
       <div className="m-auto mt-[83px] max-w-[773px]">
@@ -86,37 +86,37 @@ const VacancyInfo: FC = () => {
           <input
             type="text"
             placeholder="Name*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none mobileMax:w-80"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
           />
           <input
             type="text"
             placeholder="Last Name*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none mobileMax:w-80"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
           />
           <input
             type="text"
             placeholder="Email*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none mobileMax:w-80"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
           />
           <input
             type="text"
             placeholder="Phone"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none mobileMax:w-80"
+            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
           />
           <textarea
             name=""
             placeholder="Availability*"
-            className="h-[120px] w-full rounded border border-[#B5B5B5] pl-4 pt-4 focus:border-[#00A79D] focus:outline-none mobileMax:w-80"
+            className="h-[120px] w-full rounded border border-[#B5B5B5] pl-4 pt-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
           ></textarea>
         </div>
-        <div className="mt-4 flex justify-between mobileMax:flex-col-reverse mobileMax:gap-3">
+        <div className="mt-4 flex justify-between max-md:flex-col-reverse max-md:gap-3">
           <button
             onClick={() => {}}
-            className="flex items-center rounded border border-[#00A79D] px-5 py-3 !text-[#00A791] mobileMax:w-full"
+            className="flex items-center rounded border border-[#00A79D] px-5 py-3 !text-[#00A791] max-md:w-full"
           >
             <img src="/images/icons/attachments.svg" /> Attachments
           </button>
-          <Button name="Apply now" onClick={() => {}} className="bg-[#009462] px-5 py-3 hover:bg-[#008054] mobileMax:w-full" />
+          <Button name="Apply now" onClick={() => {}} className="bg-[#009462] px-5 py-3 hover:bg-[#008054] max-md:w-full" />
         </div>
       </div>
     </div>

@@ -9,16 +9,16 @@ interface IDropdown {
 const Dropdown: FC<IDropdown> = ({ isVisible }) => {
   return (
     <div className="mt-8 w-full cursor-pointer bg-white">
-      <div className="flex items-center justify-between border-b border-[#DDDDDD] mobileMax:flex-col mobileMax:items-start">
-        <div className="pb-5 mobileMax:pb-1">
+      <div className="flex items-center justify-between border-b border-[#DDDDDD] max-md:flex-col max-md:items-start">
+        <div className="pb-5 max-md:pb-1">
           <p className="text-[18px] text-[#008273]">Biostatistician</p>
         </div>
-        <div className="pb-5 mobileMax:pb-1">
-          <p className="text-[#B5B5B5] mobileMax:text-[14px]">Location: Remote</p>
+        <div className="pb-5 max-md:pb-1">
+          <p className="text-[#B5B5B5] max-md:text-[14px]">Location: Remote</p>
         </div>
-        <div className="pb-5 mobileMax:pb-0 mobileMax:flex justify-between mobileMax:w-full mobileMax:items-end">
-          <p className="text-[#B5B5B5] mobileMax:text-[14px]">Position Type: Full-Time</p>
-          <div className="hidden mobileMax:flex">
+        <div className="pb-5 max-md:pb-0 max-md:flex justify-between max-md:w-full max-md:items-end">
+          <p className="text-[#B5B5B5] max-md:text-[14px]">Position Type: Full-Time</p>
+          <div className="hidden max-md:flex">
             <button
               className={` ${isVisible ? 'bg-[#00A79D] text-white' : '!text-[#00A79D]'} flex h-9 w-[120px] text-[12px] items-center gap-3 border border-[#00A79D] px-3 py-[6px]`}
             >
@@ -32,7 +32,7 @@ const Dropdown: FC<IDropdown> = ({ isVisible }) => {
             name="View More"
             icon={isVisible ? 'arrowTop' : 'arrowDown'}
             onClick={() => {}}
-            className={` ${isVisible ? 'bg-[#00A79D] text-white' : '!text-[#00A79D]'} flex h-9 items-center gap-3 border border-[#00A79D] px-3 py-[6px] mobileMax:hidden`}
+            className={` ${isVisible ? 'bg-[#00A79D] text-white' : '!text-[#00A79D]'} flex h-9 items-center gap-3 border border-[#00A79D] px-3 py-[6px] max-md:hidden`}
           />
         </div>
       </div>

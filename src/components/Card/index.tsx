@@ -11,7 +11,7 @@ interface ICard {
 
 const Card: FC<ICard> = ({ avatar, name, subtitle, text, className }) => {
   return (
-    <div className={`${className} max-w-[336px] mobileMax:max-w-72`}>
+    <div className={`${className} max-w-[336px] max-md:max-w-72`}>
       <img src={avatar} />
       <div className="mt-4 flex justify-between">
         <p className="text-[24px] font-[600]">{name}</p>

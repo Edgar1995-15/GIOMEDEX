@@ -10,7 +10,7 @@ const DesktopNavigation: FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex w-[80%] items-center justify-center gap-[24px]  max-xl:gap-[20px] max-lg:gap-[18px] max-md:hidden">
+    <div className="flex w-[80%] items-center justify-center gap-[24px]  max-xl:gap-[20px] max-lg:hidden max-lg:gap-[18px]">
       <Button
         name={'Home'}
         className={'bg-transparent  max-xl:text-[14px] max-lg:text-[12px]'}

@@ -5,7 +5,7 @@ const MobileNavigation = () => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <div className="md:hidden">
+    <div className="lg:hidden">
       <Button
         icon="menu-mobile"
         className={'bg-transparent'}

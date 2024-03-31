@@ -24,7 +24,6 @@ const MobileSelect: FC<IMobileSelect> = ({
   const navigate = useNavigate();
 
   const onClick = (page: string, id: string) => {
-    console.log(page, 'page', id);
     closeLayout();
     setOpenSelect(null);
     navigate(`/${page}?id=${id}`);

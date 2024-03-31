@@ -19,7 +19,7 @@ const pages = [
   },
   {
     page: 'CDISC',
-    url: 'CDISC'
+    url: 'cdisc'
   },
   {
     page: 'Quality Policy',
@@ -37,6 +37,14 @@ const pages = [
 
 const FooterMobile = () => {
   const navigate = useNavigate();
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
+
   return (
     <div
       style={{
@@ -59,7 +67,10 @@ const FooterMobile = () => {
               key={index}
               name={el.page}
               className={'bg-transparent text-[18px] font-bold leading-[21.38px]'}
-              onClick={() => navigate(`/${el.url}`)}
+              onClick={() => {
+                scrollToTop();
+                navigate(`/${el.url}`);
+              }}
             />
           ))}
         </div>

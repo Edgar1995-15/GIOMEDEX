@@ -17,7 +17,7 @@ const Layout: FC<ILayout> = ({ openNav, setOpenNav }) => {
   return (
     <>
       {openNav && (
-        <div className="fixed left-0 top-0 flex h-full w-[79%] flex-col gap-[24px] bg-[#0B1521] px-[19px] py-[29px]">
+        <div className="fixed left-0 top-0 z-20 flex h-full w-[79%] flex-col gap-[24px] bg-[#0B1521] px-[19px] py-[29px]">
           <div className="flex w-full justify-end">
             <Button
               icon="select"

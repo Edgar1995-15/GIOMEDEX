@@ -25,7 +25,6 @@ const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) =>
   const childrenInfo = selectInfo.find((el) => el.title === openSelectChildren?.name)?.children;
 
   const onClick = (page: string, id: string) => {
-    console.log(page, 'page', id);
     navigate(`/${page}?id=${id}`);
     setSelectOpen(null);
     setOpenSelectChildren(null);

@@ -9,7 +9,7 @@ const Home: FC = () => {
 
   return (
     <div className="flex h-[calc(100vh_-_166px)] w-screen justify-center bg-[url('/public/images/backgroundImages/home-background.jpeg')] bg-cover bg-center max-md:h-[calc(100vh_-_50px)]">
-      <div className="flex w-[1440px] flex-col gap-[36px] p-[120px] max-xl:p-[80px] max-lg:p-[50px] max-md:items-center max-md:p-[30px]">
+      <div className="flex w-[1440px] flex-col p-[120px] max-xl:p-[80px] max-lg:p-[50px] max-md:items-center max-md:p-[30px]">
         <div className="flex flex-col gap-[12px]">
           <Typography
             content="GIOMEDEX CRO"
@@ -24,13 +24,13 @@ const Home: FC = () => {
             size="text-[36px] leading-[32px] max-xl:text-[30px] max-xl:leading-[26px] max-md:text-center max-md:text-center max-md:text-[24px]"
           />
         </div>
-        <div>
+        <div className='mt-5'>
           <ul
             style={{ listStyleType: 'square' }}
-            className="flex h-[calc(100%_-_150px)] flex-col flex-wrap gap-[16px] text-[30px] text-[#D9D9D9] max-xl:gap-[20px] max-xl:text-[16px] max-md:hidden"
+            className="flex h-[220px] flex-col flex-wrap gap-[16px] text-[30px] max-lg:h-[180px] max-xl:h-[180px] text-[#D9D9D9] max-xl:gap-[20px] max-xl:text-[16px] max-md:hidden"
           >
             {homePageData.map((el, index) => (
-              <li key={index} style={{ marginBottom: '16px' }}>
+              <li key={index} className='mb-4 ml-6'>
                 <Typography
                   content={el}
                   color="text-[#D9D9D9]"
@@ -55,22 +55,30 @@ const Home: FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-4 max-md:w-full max-md:flex-col">
-          <Button
-            name="Our Services"
-            className={`h-[54px] w-[172px] items-center !justify-center gap-4 bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-xl:h-[50px] max-xl:w-[140px]  max-xl:px-[16px] max-xl:py-[14px] max-xl:text-[14px] max-md:w-full`}
-            icon="select"
-            iconClassName={`w-[24px] h-[24px] max-xl:h-[20px] max-xl:w-[20px] max-lg:w-[16px] max-lg:h-[16px]`}
-            onClick={() => navigate('/Services')}
-          />
-          <Button
-            name="For Partners"
-            className={`h-[54px] w-[172px] items-center !justify-center gap-[20px] border px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-xl:h-[50px] max-xl:w-[140px] max-xl:px-[16px] max-xl:py-[14px] max-xl:text-[14px] max-md:w-full`}
-            icon="select"
-            iconClassName={`w-[24px] h-[24px] max-xl:h-[20px] max-xl:w-[20px] max-lg:w-[16px] max-lg:h-[16px]`}
-            onClick={() => navigate('/for-partners')}
-          />
-        </div>
+        <div className="flex gap-4 max-md:flex-col max-md:gap-3">
+            <Button
+              name="Our Services"
+              className={`h-[54px] w-[172px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:hidden`}
+              icon="arrowRight"
+              onClick={() => navigate('/Services')}
+            />
+            <Button
+              name="For Partners"
+              className={`h-[54px] w-[172px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:hidden`}
+              icon="arrowRight"
+              onClick={() => navigate('/for-partners')}
+            />
+            <Button
+              name="Our Services"
+              className={`h-[54px] w-[324px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
+              onClick={() => navigate('/Services')}
+            />
+            <Button
+              name="For Partners"
+              className={`h-[54px] w-[324px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
+              onClick={() => navigate('/for-partners')}
+            />
+          </div>
       </div>
     </div>
   );

@@ -20,7 +20,6 @@ const ContactUs: FC = () => {
             color="text-white"
             size="text-[32px]"
             variant="font-bold"
-            className="max-md:text-[28px]"
           />
           <Typography
             content={data.hero.subtitle}

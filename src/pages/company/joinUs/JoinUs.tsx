@@ -7,7 +7,7 @@ const JoinUs: FC = () => {
   const [activeTab, setActiveTab] = useState<number>(1);
   return (
     <div className="flex w-full justify-center bg-gradient-to-r from-teal-600 via-teal-800 to-indigo-800">
-      <div className="max-w-[1440px] px-[127px] pt-14 max-md:max-w-[324px] max-md:px-4">
+      <div className="max-w-[1440px] px-[127px] pt-14 max-md:px-4">
         <Typography
           content={data.joinUs.title}
           size="text-[30px]"

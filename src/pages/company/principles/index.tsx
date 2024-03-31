@@ -10,7 +10,7 @@ const Principles: FC = () => {
   const [showMoreGio, setShowMoreGio] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="m-auto w-full max-w-[1440px] bg-white px-32 pt-12 max-md:pt-9 max-md:px-[28px] max-md:max-w-[324px]">
+    <div className="m-auto w-full max-w-[1440px] bg-white px-32 pt-12 max-md:pt-9 max-md:px-[18px]">
       <div>
         <Typography
           content={data.principles.title}

@@ -5,7 +5,7 @@ export interface IIcon {
   className?: string;
 }
 
-const Icon: FC<IIcon> = ({ name, className = 'lg:h-auto sm:h-6 cursor-pointer' }) => {
+const Icon: FC<IIcon> = ({ name, className = 'lg:h-auto cursor-pointer' }) => {
   return (
     <img
       draggable={false as boolean}

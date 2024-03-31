@@ -9,7 +9,7 @@ const Hero: FC = () => {
   return (
     <div className="w-full">
       <div
-        className="h-[379px] w-full bg-cover bg-bottom pl-32 pt-[111px] max-md:h-[246px] max-md:pl-[18px] max-md:pt-6"
+        className="h-[379px] w-full bg-cover bg-bottom pl-32 pt-[111px] max-md:h-[246px] max-md:px-[18px] max-md:pt-6"
         style={{ backgroundImage: `url('/images/company/hero.png')` }}
       >
         <div className="m-auto max-w-[1440px] max-md:max-w-[324px]">
@@ -41,15 +41,16 @@ const Hero: FC = () => {
               className={`h-[54px] w-[172px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:hidden`}
               icon="arrowRight"
               onClick={() => navigate('/for-partners')}
+              isSpecial
             />
             <Button
               name="Our Services"
-              className={`h-[54px] w-[324px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
+              className={`h-[54px] w-full items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
               onClick={() => navigate('/Services')}
             />
             <Button
               name="For Partners"
-              className={`h-[54px] w-[324px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
+              className={`h-[54px] w-full items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
               onClick={() => navigate('/for-partners')}
             />
           </div>

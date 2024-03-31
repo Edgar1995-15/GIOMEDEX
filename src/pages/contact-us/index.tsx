@@ -12,7 +12,7 @@ const ContactUs: FC = () => {
     <div className="w-full">
       <div
         style={{ backgroundImage: 'url("/images/backgroundImages/contact-us.png")' }}
-        className="h-[382px] w-full"
+        className="h-[382px] w-full max-md:h-[448px]"
       >
         <div className="pl-[140px] pt-[137px] max-md:pl-[34px] max-md:pt-[77px]">
           <Typography

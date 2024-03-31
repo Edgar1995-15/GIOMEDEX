@@ -101,3 +101,32 @@ export const homePageData = [
   'We use SAS, R, Pinnacle21, Medidata Rave, Open Clinica, Veeva, InForm GTM',
   'From Stages I to IV: We ensure your success'
 ];
+
+export const mobileLayoutData = {
+  company: {
+    children: ['About us', 'Careers', '4 Core Principles', 'Join Us', 'Our Family'],
+    url: 'company'
+  },
+  Services: {
+    children: [
+      'Data analysis',
+      'Data Management',
+      'FSP & OUTSOURCING',
+      'Therapeutic Areas',
+      'Clinical Phases'
+    ],
+    url: 'services'
+  },
+  CDISC: {
+    children: ['SDTM', 'ADaM', 'TFL', 'CDASH', 'Operating Procedures'],
+    url: 'cdisc'
+  },
+  'Quality Policy': {
+    children: ['Our Commitments', 'KPIs'],
+    url: 'quality-policy'
+  },
+  'For Partners': {
+    children: ['Current contracts', 'Long Term Partnership'],
+    url: 'for-partners'
+  }
+};

@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom';
 import FooterHomePage from './FooterHomePage';
-import FooterAllPage from './footerAllPage';
+import FooterAllPage from './FooterAllPage';
 
 const Footer = () => {
   const location = useLocation();

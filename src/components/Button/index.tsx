@@ -11,7 +11,15 @@ interface IButton {
   isSpecial?: boolean;
 }
 
-const Button: FC<IButton> = ({ name, icon, className, iconClassName, onClick, isSpecial, textStyle }) => {
+const Button: FC<IButton> = ({
+  name,
+  icon,
+  className,
+  iconClassName,
+  onClick,
+  isSpecial,
+  textStyle
+}) => {
   const [hovered, setHovered] = useState(false);
 
   const handleMouseEnter = () => {

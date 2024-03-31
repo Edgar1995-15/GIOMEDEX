@@ -34,8 +34,8 @@ const MobileSelect: FC<IMobileSelect> = ({
     <div className="h-fit w-full">
       <Button
         name={name}
-        icon="select"
-        iconClassName={`w-[24px] h-[24px] ${name === openSelect && 'rotate-90'}`}
+        icon={name === openSelect ? 'arrowRightGreen' : 'select'}
+        iconClassName={`${name === openSelect && 'rotate-90'}`}
         className={`flex h-[32px] w-full items-center rounded-[0px] border-b ${name === openSelect && 'border-[#009462]'}`}
         textStyle={`${name === openSelect ? 'text-[#009462]' : 'text-white'} text-[16px]`}
         onClick={() => setOpenSelect(openSelect === name ? null : name)}

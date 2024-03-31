@@ -4,7 +4,7 @@ import data from './data.json';
 const CdiscInfoContentBlock = () => (
   <div className="mx-auto max-w-desktop px-[18px] py-9 md:px-32 md:py-[54px]">
     <div className="flex flex-col gap-x-20 md:flex-row">
-      <div className="md:w-1/2">
+      <div id="sdtm" className="md:w-1/2">
         <div className="flex items-start gap-x-2 md:items-center">
           <img
             id="svg_one"
@@ -20,7 +20,7 @@ const CdiscInfoContentBlock = () => (
         </div>
         <Typography content={data.sdtm.content} className="mt-3 md:mt-4 md:text-justify" />
       </div>
-      <div className="mt-9 md:mt-0 md:w-1/2">
+      <div id="adam" className="mt-9 md:mt-0 md:w-1/2">
         <div className="flex items-start gap-x-2 md:items-center">
           <img
             id="svg_two"
@@ -39,7 +39,7 @@ const CdiscInfoContentBlock = () => (
     </div>
 
     <div className="mt-0 flex flex-col gap-x-20 md:mt-8 md:flex-row">
-      <div className="mt-9 md:mt-0 md:w-1/2">
+      <div id="tfl" className="mt-9 md:mt-0 md:w-1/2">
         <div className="flex items-start gap-x-2 md:items-center">
           <img
             id="svg_one"
@@ -55,7 +55,7 @@ const CdiscInfoContentBlock = () => (
         </div>
         <Typography content={data.tlf.content} className="mt-3 md:mt-4 md:text-justify" />
       </div>
-      <div className="mt-9 md:mt-0 md:w-1/2">
+      <div id="cdash" className="mt-9 md:mt-0 md:w-1/2">
         <div className="flex items-start gap-x-2 md:items-center">
           <img
             id="svg_two"

@@ -7,10 +7,11 @@ import './styles.css';
 
 interface CarouselSliderProps {
   children: ReactNode;
+  id?: string;
   className?: string;
 }
 
-const CarouselSlider: FC<CarouselSliderProps> = ({ children, className }) => {
+const CarouselSlider: FC<CarouselSliderProps> = ({ children, id, className }) => {
   const settings = {
     dots: true,
     dotsClass: 'slick-dots',
@@ -21,7 +22,7 @@ const CarouselSlider: FC<CarouselSliderProps> = ({ children, className }) => {
   };
 
   return (
-    <div className={`mx-auto w-full md:hidden ${className}`}>
+    <div id={id} className={`mx-auto w-full md:hidden ${className}`}>
       <Slider {...settings}>{children}</Slider>
     </div>
   );

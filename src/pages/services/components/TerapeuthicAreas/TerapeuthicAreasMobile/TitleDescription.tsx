@@ -1,7 +1,14 @@
-import { useState } from 'react';
+import { FC, useState } from 'react';
 import Typography from '../../../../../components/Typography';
 
-const TitleDescription = ({ title, titleColor, description }) => {
+interface ITitleDescription {
+  id?: string;
+  title: string;
+  titleColor: string;
+  description: string;
+}
+
+const TitleDescription: FC<ITitleDescription> = ({ id, title, titleColor, description }) => {
   const initialSlicedDescription = description.substring(0, description.indexOf('.') + 1);
   const [expanded, setExpanded] = useState(true);
   const [finalDescription, setFinalDescription] = useState(initialSlicedDescription);
@@ -12,7 +19,7 @@ const TitleDescription = ({ title, titleColor, description }) => {
   };
 
   return (
-    <div className="mt-6">
+    <div id={id} className="mt-6">
       <Typography
         content={title}
         size="text-2xl"

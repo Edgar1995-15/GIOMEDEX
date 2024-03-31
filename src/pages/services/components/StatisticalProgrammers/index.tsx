@@ -2,7 +2,10 @@ import Typography from '../../../../components/Typography';
 import data from './data.json';
 
 const StatisticalProgrammers = () => (
-  <div className="mx-auto max-w-desktop px-[18px] py-9 md:px-[178px] md:py-[54px]">
+  <div
+    id="statistical-programmers"
+    className="mx-auto max-w-desktop px-[18px] py-9 md:px-[178px] md:py-[54px]"
+  >
     <div className="flex items-center gap-x-3">
       <img
         id="svg_one"

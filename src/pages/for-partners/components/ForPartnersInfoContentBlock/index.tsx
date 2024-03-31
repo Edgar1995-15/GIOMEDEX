@@ -9,7 +9,10 @@ import ButtonMobile from '../../../../components/ButtonMobile';
 const ForPartnersInfoContentBlock = () => {
   const navigate = useNavigate();
   return (
-    <div className="mx-auto max-w-desktop px-[18px] py-9 md:px-32 md:py-[54px]">
+    <div
+      id="long-term-partnership"
+      className="mx-auto max-w-desktop px-[18px] py-9 md:px-32 md:py-[54px]"
+    >
       <Typography
         content={data.header.title}
         size="text-2xl"

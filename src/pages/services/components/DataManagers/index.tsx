@@ -2,7 +2,10 @@ import Typography from '../../../../components/Typography';
 import data from './data.json';
 
 const DataManagers = () => (
-  <div className="mx-auto max-w-desktop px-[18px] py-9 md:px-[178px] md:py-[54px]">
+  <div
+    id="data-managers"
+    className="mx-auto max-w-desktop px-[18px] py-9 md:px-[178px] md:py-[54px]"
+  >
     <div className="flex items-center gap-x-3">
       <img
         id="svg_one"

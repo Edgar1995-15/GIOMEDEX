@@ -10,6 +10,7 @@ const KeyPerformance = () => {
   const navigate = useNavigate();
   return (
     <div
+      id="kpis"
       style={{
         background: `linear-gradient(100.15deg, #1C616A -4.57%, #132642 83.84%)`,
         backgroundPosition: 'center',

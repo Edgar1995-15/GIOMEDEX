@@ -6,6 +6,7 @@
     },
     "content": [
         {
+            "id": "sas-programming",
             "iconId": "Services Blur SVG Green",
             "iconSrc": "/images/icons/services_blur_on_icon_green.svg",
             "titleColor": "[#009462]",
@@ -14,6 +15,7 @@
             "descriptionSecond": "At GIOMEDEX, our team of skilled SAS programmers boasts extensive experience in the industry. From data validation to statistical analysis, our proficiency in SAS programming ensures the highest standards of accuracy and reliability. Trust us to deliver results that exceed your expectations and propel your projects towards success."
         },
         {
+            "id": "data-management",
             "iconId": "Services Blur SVG Blue",
             "iconSrc":"/images/icons/services_blur_on_icon_blue.svg",
             "titleColor":"[#215C99]",
@@ -22,6 +24,7 @@
             "descriptionSecond": "At GIOMEDEX, our team of experienced data managers is committed to delivering superior results on time and within budget. From database design to data cleaning and validation, we leverage the latest technologies and methodologies to optimize your data management processes and drive project success."
         },
         {
+            "id": "biostatistics",
             "iconId": "Services Blur SVG Teal",
             "iconSrc": "/images/icons/services_blur_on_icon_teal.svg",
             "titleColor": "[#00A79D]",
@@ -30,6 +33,7 @@
             "descriptionSecond": "At GIOMEDEX, our team of expert biostatisticians brings a wealth of experience and expertise to every project. From study design to data analysis, we employ advanced statistical methodologies to ensure the validity and integrity of your results. Trust us to deliver insights that drive informed decision-making and advance your research objectives."
         },
         {
+            "id": "software",
             "iconId":"Services Blur SVG Light Green",
             "iconSrc":"/images/icons/services_blur_on_icon_light_green.svg",
             "titleColor":"[#00A684]",

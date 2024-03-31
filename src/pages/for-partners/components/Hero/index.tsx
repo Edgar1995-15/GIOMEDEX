@@ -9,6 +9,7 @@ const Hero = () => {
   const navigate = useNavigate();
   return (
     <div
+      id="current-contracts"
       className="hidden h-[454px] w-full bg-cover bg-center bg-no-repeat md:block"
       style={{
         backgroundImage: 'url("/images/for-partners/hero-bg.png")'

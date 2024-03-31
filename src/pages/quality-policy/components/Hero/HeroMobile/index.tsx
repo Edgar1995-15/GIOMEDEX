@@ -9,6 +9,7 @@ const HeroMobile = () => {
   const navigate = useNavigate();
   return (
     <div
+      id="our-commitments"
       className="h-fit min-h-[456px] w-full bg-cover bg-center bg-no-repeat md:hidden"
       style={{
         backgroundImage: 'url("/images/quality-policy/hero-mobile-bg.png")'

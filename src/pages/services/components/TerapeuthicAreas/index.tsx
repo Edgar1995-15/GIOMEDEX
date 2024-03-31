@@ -28,7 +28,7 @@ const TerapeuthicAreas = () => {
       <div className="relative mt-[54px] flex items-start justify-center bg-cover">
         {/* Left Side  */}
         <div className="w-3/6 max-w-[700px]">
-          <div className="mt-[1px] flex flex-row-reverse items-start">
+          <div id="oncology" className="mt-[1px] flex flex-row-reverse items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-blue.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -49,7 +49,7 @@ const TerapeuthicAreas = () => {
             </div>
           </div>
 
-          <div className="mt-[70px] flex flex-row-reverse items-start">
+          <div id="dermatology" className="mt-[70px] flex flex-row-reverse items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-dermatology.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -70,7 +70,7 @@ const TerapeuthicAreas = () => {
             </div>
           </div>
 
-          <div className="mt-[120px] flex flex-row-reverse items-start">
+          <div id="medical-devices" className="mt-[120px] flex flex-row-reverse items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-medical.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -91,7 +91,7 @@ const TerapeuthicAreas = () => {
             </div>
           </div>
 
-          <div className="mt-36 flex flex-row-reverse items-start">
+          <div id="diabetes" className="mt-36 flex flex-row-reverse items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-purple.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -118,7 +118,7 @@ const TerapeuthicAreas = () => {
         />
         {/* Right Side  */}
         <div className="w-3/6 max-w-[700px]">
-          <div className="mt-[140px] flex items-start">
+          <div id="cardiovascular" className="mt-[140px] flex items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-green.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -139,7 +139,7 @@ const TerapeuthicAreas = () => {
             </div>
           </div>
 
-          <div className="mt-[120px] flex items-start">
+          <div id="infectious-diseases" className="mt-[120px] flex items-start">
             <img
               className="rotate-180 transform"
               src="/images/services/icons/terapeuthic-areas/dot-line-blue.svg"
@@ -161,7 +161,7 @@ const TerapeuthicAreas = () => {
             </div>
           </div>
 
-          <div className="mt-[120px] flex items-start">
+          <div id="ophthalmology" className="mt-[120px] flex items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-green.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -182,7 +182,7 @@ const TerapeuthicAreas = () => {
             </div>
           </div>
 
-          <div className="mt-[120px] flex items-start">
+          <div id="neurology" className="mt-[120px] flex items-start">
             <img
               src="/images/services/icons/terapeuthic-areas/dot-line-neurology.svg"
               alt="Terapeuthic areas dot line SVG"
@@ -205,7 +205,7 @@ const TerapeuthicAreas = () => {
         </div>
       </div>
       {/* Last Info Div: It is out of main block because of custom layout */}
-      <div className="w-3/6 max-w-[700px]">
+      <div id="geastroenterology" className="w-3/6 max-w-[700px]">
         <div className="flex flex-row-reverse items-start">
           <img
             src="/images/services/icons/terapeuthic-areas/dot-line-blue.svg"

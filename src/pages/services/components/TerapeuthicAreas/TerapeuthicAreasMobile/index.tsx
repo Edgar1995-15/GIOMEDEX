@@ -22,46 +22,55 @@ const TerapeuthicAreasMobile = () => {
       </div>
       {/* Content  */}
       <TitleDescription
+        id="oncology"
         title={data.oncology.title}
         description={data.oncology.content}
         titleColor="[#1DA1F2]"
       />
       <TitleDescription
+        id="cardiovascular"
         title={data.cardiovascular.title}
         description={data.cardiovascular.content}
         titleColor="[#67C15E]"
       />
       <TitleDescription
+        id="dermatology"
         title={data.dermatology.title}
         description={data.dermatology.content}
         titleColor="[#00A79D]"
       />
       <TitleDescription
+        id="infectious-diseases"
         title={data.infectiousDiseases.title}
         description={data.infectiousDiseases.content}
         titleColor="[#1DA1F2]"
       />
       <TitleDescription
+        id="medical-devices"
         title={data.medicalDevices.title}
         description={data.medicalDevices.content}
         titleColor="[#00A684]"
       />
       <TitleDescription
+        id="ophthalmology"
         title={data.ophthalmology.title}
         description={data.ophthalmology.content}
         titleColor="[#67C15E]"
       />
       <TitleDescription
+        id="diabetes"
         title={data.diabetes.title}
         description={data.diabetes.content}
         titleColor="[#9747FF]"
       />
       <TitleDescription
+        id="neurology"
         title={data.neurology.title}
         description={data.neurology.content}
         titleColor="[#00A676]"
       />
       <TitleDescription
+        id="geastroenterology"
         title={data.gastroenterology.title}
         description={data.gastroenterology.content}
         titleColor="[#1DA1F2]"

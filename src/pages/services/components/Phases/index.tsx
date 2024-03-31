@@ -2,7 +2,10 @@ import Typography from '../../../../components/Typography';
 import data from './data.json';
 
 const Phases = () => (
-  <div className="mx-auto max-w-desktop px-[18px] py-9 md:px-[128px] md:py-[54px]">
+  <div
+    id="clinical-phases"
+    className="mx-auto max-w-desktop px-[18px] py-9 md:px-[128px] md:py-[54px]"
+  >
     <div>
       <Typography
         content={data.chlinicalPhases.title}
@@ -12,7 +15,7 @@ const Phases = () => (
       />
       <Typography content={data.chlinicalPhases.content} className="mt-3 md:mt-4 md:text-justify" />
     </div>
-    <div className="mt-6 md:mt-5">
+    <div id="phase-I" className="mt-6 md:mt-5">
       <Typography
         content={data.chlinicalPhases.phase_one.title}
         size="text-2xl"
@@ -24,7 +27,7 @@ const Phases = () => (
         className="mt-3 text-justify md:mt-4"
       />
     </div>
-    <div className="mt-6 md:mt-5">
+    <div id="phase-II" className="mt-6 md:mt-5">
       <Typography
         content={data.chlinicalPhases.phase_two.title}
         size="text-2xl"
@@ -36,7 +39,7 @@ const Phases = () => (
         className="mt-3 md:mt-4 md:text-justify"
       />
     </div>
-    <div className="mt-6 md:mt-5">
+    <div id="phase-III" className="mt-6 md:mt-5">
       <Typography
         content={data.chlinicalPhases.phase_three.title}
         size="text-2xl"
@@ -48,7 +51,7 @@ const Phases = () => (
         className="mt-3 md:mt-4 md:text-justify"
       />
     </div>
-    <div className="mt-6 md:mt-5">
+    <div id="phase-IV" className="mt-6 md:mt-5">
       <Typography
         content={data.chlinicalPhases.phase_four.title}
         size="text-2xl"

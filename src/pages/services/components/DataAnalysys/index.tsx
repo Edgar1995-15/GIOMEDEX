@@ -10,7 +10,7 @@ import IconTitleInfoComponent from '../IconTitleInfoComponent';
 const DataAnalysys = () => {
   const navigate = useNavigate();
   return (
-    <div className="mx-auto max-w-desktop px-[18px] py-9  md:px-32 md:py-[54px]">
+    <div id="data-analysis" className="mx-auto max-w-desktop px-[18px] py-9  md:px-32 md:py-[54px]">
       <div className="flex flex-col ">
         <Typography
           content={data.header.title}
@@ -31,6 +31,8 @@ const DataAnalysys = () => {
             .filter((_, index) => index % 2 === 0)
             .map((el) => (
               <IconTitleInfoComponent
+                key={el.id}
+                id={el.id}
                 iconId={el.iconId}
                 iconSrc={el.iconSrc}
                 titleColor={el.titleColor}
@@ -45,6 +47,8 @@ const DataAnalysys = () => {
             .filter((_, index) => index % 2 !== 0)
             .map((el) => (
               <IconTitleInfoComponent
+                key={el.id}
+                id={el.id}
                 iconId={el.iconId}
                 iconSrc={el.iconSrc}
                 titleColor={el.titleColor}
@@ -55,9 +59,10 @@ const DataAnalysys = () => {
             ))}
         </div>
       </div>
-      <CarouselSlider className="mt-[42px]">
+      <CarouselSlider id="data-management" className="mt-[42px]">
         {data.content.map((el) => (
           <IconTitleInfoComponent
+            key={el.id}
             iconId={el.iconId}
             iconSrc={el.iconSrc}
             titleColor={el.titleColor}

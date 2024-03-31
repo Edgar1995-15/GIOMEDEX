@@ -5,6 +5,7 @@
     },
     "contactUs": {
         "title": "Contact us",
-        "subtitle": "Have any questions? We will be glad to answer all your qurestions! Let’s stay in touch."
+        "subtitle": "Have any questions? We will be glad to answer all your qurestions! Let’s stay in touch.",
+        "mobileSubtitle": "We will be glad to answer all your questions! Let’s stay in touch."
     }
 }

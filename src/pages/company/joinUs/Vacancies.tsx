@@ -6,6 +6,7 @@ import Typography from '../../../components/Typography';
 const Vacancies: FC = () => {
   return (
     <div
+      id='vacancies'
       className="mt-[49px] h-[365px] w-full bg-cover bg-center"
       style={{ backgroundImage: `url('/images/company/joinus.png')` }}
     >

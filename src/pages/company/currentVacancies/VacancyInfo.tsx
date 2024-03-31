@@ -24,6 +24,7 @@ const VacancyInfo: FC = () => {
   const [attachmentName, setAttachmentName] = useState<string>('');
   const [errorMessages, setErrorMessages] = useState<Partial<FormState>>({});
   const [globalError, setGlobalError] = useState<string>('');
+  const [confirmPopup, setConfirmPopup] = useState<boolean>(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleAttachmentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -73,6 +74,7 @@ const VacancyInfo: FC = () => {
           .send('service_fouvyws', 'template_eexz5kz', templateParams, 'gU6BimkgtWxvEZv0P')
           .then((response) => {
             console.log('Email sent successfully!', response);
+            setConfirmPopup(true);
             // Add any success message or redirect to a thank you page
           })
           .catch((error) => {
@@ -87,6 +89,7 @@ const VacancyInfo: FC = () => {
         .send('service_fouvyws', 'template_eexz5kz', templateParams, 'gU6BimkgtWxvEZv0P')
         .then((response) => {
           console.log('Email sent successfully!', response);
+          setConfirmPopup(true);
           // Add any success message or redirect to a thank you page
         })
         .catch((error) => {
@@ -196,7 +199,30 @@ const VacancyInfo: FC = () => {
       <div className="mt-6 max-md:hidden">
         <Typography content={data.vacancyBenefits.description} className="text-justify" />
       </div>
-      <div className="m-auto mt-[83px] max-w-[773px]">
+      <div className="relative m-auto mt-[83px] max-w-[773px]">
+        {confirmPopup && (
+          <div className="absolute left-1/2 top-1/2 h-[210px] w-[404px] -translate-x-1/2 -translate-y-1/2 transform bg-white shadow-md max-md:w-[288px]">
+            <div className="flex flex-col items-center justify-center px-14 py-6 max-md:px-8">
+              <Typography
+                content={data.confirm.title}
+                color="text-[#009462]"
+                size="text-[18px]"
+                className="text-center !font-[600]"
+              />
+              <Typography
+                content={data.confirm.text}
+                color="text-[#595959]"
+                size="text-[14px]"
+                className="pt-2 text-center"
+              />
+              <Button
+                name="Ok"
+                className="mt-9 flex h-[43px] w-[125px] items-center !justify-center rounded-md bg-[#009462] max-md:mt-5"
+                onClick={() => {setConfirmPopup(false)}}
+              />
+            </div>
+          </div>
+        )}
         <p className="text-[24px] font-[500] text-[#00A791]">Apply Here</p>
         <div className="mt-5 flex flex-wrap gap-3">
           <div>

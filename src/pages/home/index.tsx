@@ -10,7 +10,7 @@ const Home: FC = () => {
   return (
     <div className="flex h-[calc(100vh_-_166px)] w-screen justify-center bg-[url('/public/images/backgroundImages/home-background.jpeg')] bg-cover bg-center max-md:h-[calc(100vh_-_50px)]">
       <div className="flex w-[1440px] flex-col p-[120px] max-xl:p-[80px] max-lg:p-[50px] max-md:items-center max-md:p-[30px]">
-        <div className="flex flex-col gap-[12px]">
+        <div className="flex flex-col gap-[12px] max-md:pb-[29px]">
           <Typography
             content="GIOMEDEX CRO"
             variant="font-bold"
@@ -24,13 +24,13 @@ const Home: FC = () => {
             size="text-[36px] leading-[32px] max-xl:text-[30px] max-xl:leading-[26px] max-md:text-center max-md:text-center max-md:text-[24px]"
           />
         </div>
-        <div className='mt-5'>
+        <div className="mt-5">
           <ul
             style={{ listStyleType: 'square' }}
-            className="flex h-[220px] flex-col flex-wrap gap-[16px] text-[30px] max-lg:h-[180px] max-xl:h-[180px] text-[#D9D9D9] max-xl:gap-[20px] max-xl:text-[16px] max-md:hidden"
+            className="flex h-[220px] flex-col flex-wrap gap-[16px] text-[30px] text-[#D9D9D9] max-xl:h-[180px] max-xl:gap-[20px] max-xl:text-[16px] max-lg:h-[180px] max-md:hidden"
           >
             {homePageData.map((el, index) => (
-              <li key={index} className='mb-4 ml-6'>
+              <li key={index} className="mb-4 ml-6">
                 <Typography
                   content={el}
                   color="text-[#D9D9D9]"
@@ -55,31 +55,31 @@ const Home: FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-4 max-md:flex-col max-md:gap-3 w-full">
-            <Button
-              name="Our Services"
-              className={`h-[54px] w-[172px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:hidden`}
-              icon="arrowRight"
-              onClick={() => navigate('/Services')}
-            />
-            <Button
-              name="For Partners"
-              className={`h-[54px] w-[172px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:hidden`}
-              icon="arrowRight"
-              onClick={() => navigate('/for-partners')}
-              isSpecial
-            />
-            <Button
-              name="Our Services"
-              className={`h-[54px] w-full items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
-              onClick={() => navigate('/Services')}
-            />
-            <Button
-              name="For Partners"
-              className={`h-[54px] w-full items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
-              onClick={() => navigate('/for-partners')}
-            />
-          </div>
+        <div className="flex w-full gap-4 max-md:flex-col max-md:gap-3">
+          <Button
+            name="Our Services"
+            className={`h-[54px] w-[172px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:hidden`}
+            icon="arrowRight"
+            onClick={() => navigate('/Services')}
+          />
+          <Button
+            name="For Partners"
+            className={`h-[54px] w-[172px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:hidden`}
+            icon="arrowRight"
+            onClick={() => navigate('/for-partners')}
+            isSpecial
+          />
+          <Button
+            name="Our Services"
+            className={`hidden h-[54px] w-full items-center !justify-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:flex`}
+            onClick={() => navigate('/Services')}
+          />
+          <Button
+            name="For Partners"
+            className={`hidden h-[54px] w-full items-center !justify-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:flex`}
+            onClick={() => navigate('/for-partners')}
+          />
+        </div>
       </div>
     </div>
   );

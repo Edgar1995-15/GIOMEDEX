@@ -10,13 +10,14 @@ import Cdisc from '../pages/cdisc';
 import QualityPolicy from '../pages/quality-policy';
 import ForPartners from '../pages/for-partners';
 import ContactUs from '../pages/contact-us';
+import PageNotFound from '../pages/pageNotFound';
 
 interface IPages {
   path: string;
   page: FC;
 }
 
-const pages: IPages[] = [
+export const pages: IPages[] = [
   {
     path: '/',
     page: Home
@@ -55,6 +56,7 @@ const Router = () => {
         {pages.map((el: IPages) => (
           <Route key={el.path} path={el.path} element={<el.page />} />
         ))}
+        <Route path="*" element={<PageNotFound />} />
       </Routes>
       <Footer />
     </>

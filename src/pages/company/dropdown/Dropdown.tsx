@@ -16,14 +16,14 @@ const Dropdown: FC<IDropdown> = ({ isVisible }) => {
         <div className="pb-5 max-md:pb-1">
           <p className="text-[#B5B5B5] max-md:text-[14px]">Location: Remote</p>
         </div>
-        <div className="pb-5 max-md:pb-0 max-md:flex justify-between max-md:w-full max-md:items-end">
+        <div className="justify-between pb-5 max-md:flex max-md:w-full max-md:items-end max-md:pb-0">
           <p className="text-[#B5B5B5] max-md:text-[14px]">Position Type: Full-Time</p>
           <div className="hidden max-md:flex">
             <button
-              className={` ${isVisible ? 'bg-[#00A79D] text-white' : '!text-[#00A79D]'} flex h-9 w-[120px] text-[12px] items-center gap-3 border border-[#00A79D] px-3 py-[6px]`}
+              className={` ${isVisible ? 'bg-[#00A79D] text-white' : '!text-[#00A79D]'} flex h-9 w-[120px] items-center gap-3 border border-[#00A79D] px-3 py-[6px] text-[12px]`}
             >
               View More
-              <Icon name={isVisible ? 'arrowTop' : 'arrowDown'} className='w-5 max-md:w-3' />
+              <Icon name={isVisible ? 'arrowTop' : 'arrowDown'} className="w-5 max-md:w-3" />
             </button>
           </div>
         </div>

@@ -218,7 +218,9 @@ const VacancyInfo: FC = () => {
               <Button
                 name="Ok"
                 className="mt-9 flex h-[43px] w-[125px] items-center !justify-center rounded-md bg-[#009462] max-md:mt-5"
-                onClick={() => {setConfirmPopup(false)}}
+                onClick={() => {
+                  setConfirmPopup(false);
+                }}
               />
             </div>
           </div>

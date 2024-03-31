@@ -28,27 +28,27 @@ const ContactUs: FC = () => {
             variant="font-bold"
           />
         </div>
-        <div className="mt-6 hidden gap-4 max-md:flex flex-col">
+        <div className="mt-6 hidden flex-col gap-4 max-md:flex">
           <Button
             name="Our Services"
-            className={`h-[54px] w-[324px] items-center !justify-center bg-[#009462] px-[20px] py-[16px] max-md:flex m-auto`}
+            className={`m-auto h-[54px] w-[324px] items-center !justify-center bg-[#009462] px-[20px] py-[16px] max-md:flex`}
             onClick={() => navigate('/Services')}
           />
           <Button
             name="For Partners"
-            className={`h-[54px] w-[324px] items-center !justify-center border border-white px-[20px] py-[16px] max-md:flex m-auto`}
+            className={`m-auto h-[54px] w-[324px] items-center !justify-center border border-white px-[20px] py-[16px] max-md:flex`}
             onClick={() => navigate('/for-partners')}
           />
         </div>
       </div>
-      <div className="m-auto mb-8 mt-16 flex justify-between w-full max-w-[1440px] px-[228px] max-md:flex-col max-md:mt-9 max-md:px-[18px] max-lg:px-20">
-        <div className="flex w-full flex-col max-md:justify-center max-md:items-center">
+      <div className="m-auto mb-8 mt-16 flex w-full max-w-[1440px] justify-between px-[228px] max-lg:px-20 max-md:mt-9 max-md:flex-col max-md:px-[18px]">
+        <div className="flex w-full flex-col max-md:items-center max-md:justify-center">
           <Typography
             content={data.contactUs.title}
             color="text-[#009462]"
             variant="font-bold"
             size="text-[32px]"
-            className='max-md:text-[24px] max-md:text-center'
+            className="max-md:text-center max-md:text-[24px]"
           />
           <Typography
             content={data.contactUs.subtitle}
@@ -58,33 +58,33 @@ const ContactUs: FC = () => {
           <Typography
             content={data.contactUs.mobileSubtitle}
             size="text-[16px]"
-            className="hidden max-md:block font-[500] text-center"
+            className="hidden text-center font-[500] max-md:block"
           />
           <ul className="mt-4 flex flex-col gap-4">
             <li className="flex items-center gap-[6px] text-[14px] max-md:flex-col">
               <Icon name="phone" className="h-3 w-3 max-md:hidden" />
-              <Icon name='roundedPhone' className='hidden max-md:block h-6 w-6' />
+              <Icon name="roundedPhone" className="hidden h-6 w-6 max-md:block" />
               +00 000 000 000 00
             </li>
             <li className="flex items-center gap-[6px] text-[14px] max-md:flex-col">
               <Icon name="messageBox" className="h-3 w-3 max-md:hidden" />
-              <Icon name='roundedMessage' className='hidden max-md:block h-6 w-6' />
+              <Icon name="roundedMessage" className="hidden h-6 w-6 max-md:block" />
               info@giomedex.com
             </li>
             <li className="flex items-center gap-[6px] text-[14px] max-md:flex-col">
               <Icon name="location" className="h-3 w-3 max-md:hidden" />
-              <Icon name='roundedLocation' className='hidden max-md:block h-6 w-6' />
+              <Icon name="roundedLocation" className="hidden h-6 w-6 max-md:block" />
               Lore-ipsumipsu Str. 00A, 00000 Leipzig,Germany
             </li>
             <li className="flex items-center gap-[6px] text-[14px] max-md:flex-col">
               <Icon name="location" className="h-3 w-3 max-md:hidden" />
-              <Icon name='roundedLocation' className='hidden max-md:block h-6 w-6' />
+              <Icon name="roundedLocation" className="hidden h-6 w-6 max-md:block" />
               Loremips 00A apt. 00,0000 Yerevan,Armenia
             </li>
           </ul>
         </div>
         <div className="flex w-full justify-center">
-          <div className="mt-5 flex flex-wrap justify-end gap-3 max-md:justify-center max-md:flex-col">
+          <div className="mt-5 flex flex-wrap justify-end gap-3 max-md:flex-col max-md:justify-center">
             <input
               type="text"
               placeholder="First Name*"

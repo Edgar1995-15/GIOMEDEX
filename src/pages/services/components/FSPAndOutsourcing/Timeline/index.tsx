@@ -4,7 +4,7 @@ import Typography from '../../../../../components/Typography';
 
 const Timeline = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto hidden md:block">
       <div className="relative mt-[54px] flex items-start justify-center bg-cover">
         {/* Left Side  */}
         <div className="w-3/6 max-w-[700px]">

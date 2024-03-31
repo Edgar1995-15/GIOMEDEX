@@ -1,0 +1,30 @@
+.slick-dots li button:before {
+  display: none;
+}
+
+/* Style the custom dots */
+.slick-slider .slick-dots {
+  list-style: none;
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.slick-slider .slick-dots li {
+  display: inline-block;
+  margin: 0 2px;
+}
+
+.slick-slider .slick-dots li button {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #e1e1e1;
+}
+
+.slick-slider .slick-dots li.slick-active button {
+  width: 12px;
+  height: 12px;
+  background-color: #009462; /* Green color for active dot */
+}

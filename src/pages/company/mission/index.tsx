@@ -9,7 +9,7 @@ const Mission: FC = () => {
     <div
       className={`flex min-h-[333px] w-full justify-center bg-gradient-to-br from-[#009462] to-[#3B579D] ${activeTab === 2 ? 'max-md:h-[500px]' : 'max-md:h-[434px]'}`}
     >
-      <div className="container mx-32 mt-9 mb-9 flex max-w-[1440px] justify-around gap-10 max-md:gap-0 max-md:mx-4 max-md:max-w-[324px] max-md:flex-col max-md:justify-center">
+      <div className="container mx-32 mb-9 mt-9 flex max-w-[1440px] justify-around gap-10 max-md:mx-4 max-md:max-w-[324px] max-md:flex-col max-md:justify-center max-md:gap-0">
         <div className={`max-w-[526px] ${activeTab === 1 ? '' : 'max-md:hidden'}`}>
           <div className="flex items-center gap-2">
             <Icon name="points" />

@@ -23,7 +23,7 @@ const JoinUs: FC = () => {
           />
         </div>
         <div className="mt-9 flex w-full justify-between gap-11 max-md:justify-center max-md:pb-9">
-          <div className={`max-w-[364px] ${activeTab === 1 ? "" : "max-md:hidden"}`}>
+          <div className={`max-w-[364px] ${activeTab === 1 ? '' : 'max-md:hidden'}`}>
             <div className="flex gap-2">
               <Icon name="know-how" />
               <Typography
@@ -40,7 +40,7 @@ const JoinUs: FC = () => {
               color="text-white"
             />
           </div>
-          <div className={`mt-10 max-w-[364px] ${activeTab === 2 ? "" : "max-md:hidden"}`}>
+          <div className={`mt-10 max-w-[364px] ${activeTab === 2 ? '' : 'max-md:hidden'}`}>
             <div className="flex items-center gap-2">
               <Icon name="talanted" />
               <Typography
@@ -57,7 +57,7 @@ const JoinUs: FC = () => {
               color="text-white"
             />
           </div>
-          <div className={`max-w-[364px] ${activeTab === 3 ? "" : "max-md:hidden"}`}>
+          <div className={`max-w-[364px] ${activeTab === 3 ? '' : 'max-md:hidden'}`}>
             <div className="flex items-center gap-2">
               <Icon name="time" />
               <Typography
@@ -75,7 +75,7 @@ const JoinUs: FC = () => {
             />
           </div>
         </div>
-        <div className="m-auto mt-9 hidden gap-2 max-md:flex mb-14 justify-center">
+        <div className="m-auto mb-14 mt-9 hidden justify-center gap-2 max-md:flex">
           <div
             className={`h-[14px] w-[14px] rounded-full border-[2px] border-white ${activeTab === 1 ? 'bg-[#009462]' : 'bg-white'}`}
             onClick={() => setActiveTab(1)}

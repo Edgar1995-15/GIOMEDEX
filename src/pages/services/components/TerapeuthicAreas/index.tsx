@@ -8,7 +8,7 @@ import Button from '../../../../components/Button';
 const TerapeuthicAreas = () => {
   const navigate = useNavigate();
   return (
-    <div className="mx-auto max-w-desktop px-32 py-[54px]">
+    <div className="mx-auto hidden max-w-desktop px-32 py-[54px] md:block">
       {/* Header  */}
       <div>
         <Typography

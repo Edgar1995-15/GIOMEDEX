@@ -45,12 +45,12 @@ const Hero: FC = () => {
             />
             <Button
               name="Our Services"
-              className={`h-[54px] w-full items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
+              className={`hidden h-[54px] w-full items-center !justify-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:flex`}
               onClick={() => navigate('/Services')}
             />
             <Button
               name="For Partners"
-              className={`h-[54px] w-full items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
+              className={`hidden h-[54px] w-full items-center !justify-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:flex`}
               onClick={() => navigate('/for-partners')}
             />
           </div>

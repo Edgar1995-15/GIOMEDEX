@@ -2,6 +2,10 @@
   display: none;
 }
 
+.slick-arrow {
+  display: none !important;
+}
+
 /* Style the custom dots */
 .slick-slider .slick-dots {
   list-style: none;

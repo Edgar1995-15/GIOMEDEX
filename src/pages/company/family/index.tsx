@@ -6,7 +6,7 @@ import Typography from '../../../components/Typography';
 const Family: FC = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <div className="m-auto mt-14 flex w-full max-w-[1440px] flex-col max-md:mt-9">
+    <div id='family' className="m-auto mt-14 flex w-full max-w-[1440px] flex-col max-md:mt-9">
       <div className="max-w-[90%] pl-[133px] max-md:pl-[18px]">
         <Typography
           content={data.family.title}

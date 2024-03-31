@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 const Hero: FC = () => {
   const navigate = useNavigate();
   return (
-    <div className="w-full">
+    <div className="w-full" id='hero'>
       <div
         className="h-[379px] w-full bg-cover bg-bottom pl-32 pt-[111px] max-md:h-[246px] max-md:px-[18px] max-md:pt-6"
         style={{ backgroundImage: `url('/images/company/hero.png')` }}

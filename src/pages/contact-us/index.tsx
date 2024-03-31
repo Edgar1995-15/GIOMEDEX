@@ -14,6 +14,7 @@ const ContactUs: FC = () => {
         style={{ backgroundImage: 'url("/images/backgroundImages/contact-us.png")' }}
         className="h-[382px] w-full max-md:h-[448px]"
       >
+        <div className='max-w-[1440px] m-auto'>
         <div className="pl-[140px] pt-[137px] max-md:pl-[34px] max-md:pt-[77px]">
           <Typography
             content={data.hero.title}
@@ -39,6 +40,7 @@ const ContactUs: FC = () => {
             className={`m-auto h-[54px] w-[324px] items-center !justify-center border border-white px-[20px] py-[16px] max-md:flex`}
             onClick={() => navigate('/for-partners')}
           />
+        </div>
         </div>
       </div>
       <div className="m-auto mb-8 mt-16 flex w-full max-w-[1440px] justify-between px-[228px] max-lg:px-20 max-md:mt-9 max-md:flex-col max-md:px-[18px]">

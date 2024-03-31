@@ -20,6 +20,7 @@ const Company: FC = () => {
       'Our Family': 'family',
       'Join Us': 'join-us',
       'Our Vacancies': 'current-vacancies',
+      'Data Management': 'data-managment'
     };
 
     const urlParams = new URLSearchParams(location.search);

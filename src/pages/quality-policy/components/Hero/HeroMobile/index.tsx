@@ -1,17 +1,17 @@
 import { useNavigate } from 'react-router-dom';
 
-import data from './data.json';
+import data from '../data.json';
 
-import Typography from '../../../../components/Typography';
-import ButtonMobile from '../../../../components/ButtonMobile';
+import Typography from '../../../../../components/Typography';
+import ButtonMobile from '../../../../../components/ButtonMobile';
 
 const HeroMobile = () => {
   const navigate = useNavigate();
   return (
     <div
-      className="h-fit min-h-[348px] w-full bg-cover bg-center bg-no-repeat md:hidden"
+      className="h-fit min-h-[456px] w-full bg-cover bg-center bg-no-repeat md:hidden"
       style={{
-        backgroundImage: 'url("/images/services/hero-mobile-bg.png")'
+        backgroundImage: 'url("/images/quality-policy/hero-mobile-bg.png")'
       }}
     >
       <div className="mx-auto h-full max-w-mobile px-[18px] py-6">
@@ -20,7 +20,7 @@ const HeroMobile = () => {
           size="text-[28px]"
           variant="font-bold"
           color="text-white"
-          className="leading-[22px]"
+          className="leading-8"
         />
         <Typography
           content={data.header.content}

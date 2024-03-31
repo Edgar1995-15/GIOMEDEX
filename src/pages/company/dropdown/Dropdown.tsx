@@ -23,7 +23,7 @@ const Dropdown: FC<IDropdown> = ({ isVisible }) => {
               className={` ${isVisible ? 'bg-[#00A79D] text-white' : '!text-[#00A79D]'} flex h-9 w-[120px] text-[12px] items-center gap-3 border border-[#00A79D] px-3 py-[6px]`}
             >
               View More
-              <Icon name={isVisible ? 'arrowTop' : 'arrowDown'} className='w-5' />
+              <Icon name={isVisible ? 'arrowTop' : 'arrowDown'} className='w-5 max-md:w-3' />
             </button>
           </div>
         </div>

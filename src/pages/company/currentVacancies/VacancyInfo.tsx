@@ -4,15 +4,27 @@ import data from '../data.json';
 import Typography from '../../../components/Typography';
 import emailjs from '@emailjs/browser';
 
+interface FormState {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  message: string;
+}
+
 const VacancyInfo: FC = () => {
-  const [firstName, setFirstName] = useState('');
-  const [lastName, setLastName] = useState('');
-  const [email, setEmail] = useState('');
-  const [phone, setPhone] = useState('');
-  const [message, setMessage] = useState('');
-  const [attachment, setAttachment] = useState<File | null>(null); // State to store selected file
+  const [formState, setFormState] = useState<FormState>({
+    firstName: '',
+    lastName: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+  const [attachment, setAttachment] = useState<File | null>(null);
   const [attachmentName, setAttachmentName] = useState<string>('');
-  const fileInputRef = useRef<HTMLInputElement>(null); // Ref to input element
+  const [errorMessages, setErrorMessages] = useState<Partial<FormState>>({});
+  const [globalError, setGlobalError] = useState<string>('');
+  const fileInputRef = useRef<HTMLInputElement>(null);
 
   const handleAttachmentChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files && e.target.files[0];
@@ -20,15 +32,34 @@ const VacancyInfo: FC = () => {
     setAttachmentName(file?.name || '');
   };
 
+  const validateEmail = (input: string): boolean => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(input);
+  };
+
   const sendEmail = () => {
-    const templateParams:any = {
-      firstName,
-      lastName,
-      email,
-      phone,
-      message,
+    const templateParams: any = {
+      ...formState
     };
-  
+
+    const newErrorMessages: Partial<FormState> = {};
+
+    // Validate required fields
+    if (!formState.firstName || !formState.lastName || !formState.message || !formState.email) {
+      newErrorMessages.firstName = !formState.firstName ? 'Please enter your first name.' : '';
+      newErrorMessages.lastName = !formState.lastName ? 'Please enter your last name.' : '';
+      newErrorMessages.message = !formState.message ? 'Please enter a message.' : '';
+      newErrorMessages.email = !formState.email ? 'Please enter a valid email adress.' : '';
+      setErrorMessages(newErrorMessages);
+      return;
+    }
+
+    if (!validateEmail(formState.email)) {
+      newErrorMessages.email = 'Please enter a valid email address.';
+      setErrorMessages(newErrorMessages);
+      return;
+    }
+
     // If attachment is not null, include it in the templateParams as base64
     if (attachment) {
       const reader = new FileReader();
@@ -36,7 +67,7 @@ const VacancyInfo: FC = () => {
       reader.onloadend = () => {
         // Convert the attachment to base64 and include it in the templateParams
         templateParams.attachment = reader.result;
-        
+
         // Send email using EmailJS
         emailjs
           .send('service_fouvyws', 'template_eexz5kz', templateParams, 'gU6BimkgtWxvEZv0P')
@@ -46,6 +77,7 @@ const VacancyInfo: FC = () => {
           })
           .catch((error) => {
             console.error('Email sending failed:', error);
+            setGlobalError(error.text);
             // Handle error, show error message, etc.
           });
       };
@@ -63,7 +95,18 @@ const VacancyInfo: FC = () => {
         });
     }
   };
-  
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormState({
+      ...formState,
+      [name]: value
+    });
+    setErrorMessages({
+      ...errorMessages,
+      [name]: ''
+    });
+  };
 
   return (
     <div>
@@ -156,40 +199,65 @@ const VacancyInfo: FC = () => {
       <div className="m-auto mt-[83px] max-w-[773px]">
         <p className="text-[24px] font-[500] text-[#00A791]">Apply Here</p>
         <div className="mt-5 flex flex-wrap gap-3">
-          <input
-            type="text"
-            placeholder="Name*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
-            onChange={(e) => setFirstName(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Last Name*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
-            onChange={(e) => setLastName(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Email*"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
-            onChange={(e) => setEmail(e.target.value)}
-          />
-          <input
-            type="text"
-            placeholder="Phone"
-            className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
-            onChange={(e) => setPhone(e.target.value)}
-          />
-          <textarea
-            name=""
-            placeholder="Availability*"
-            className="h-[120px] w-full rounded border border-[#B5B5B5] pl-4 pt-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
-            onChange={(e) => setMessage(e.target.value)}
-          ></textarea>
+          <div>
+            <input
+              type="text"
+              placeholder="Name*"
+              name="firstName"
+              value={formState.firstName}
+              className={`h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80 ${errorMessages.firstName ? 'border-red-500' : ''}`}
+              onChange={handleInputChange}
+            />
+            {errorMessages.firstName && (
+              <div className="text-red-500">{errorMessages.firstName}</div>
+            )}
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Last Name*"
+              name="lastName"
+              value={formState.lastName}
+              className={`h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80 ${errorMessages.lastName ? 'border-red-500' : ''}`}
+              onChange={handleInputChange}
+            />
+            {errorMessages.lastName && <div className="text-red-500">{errorMessages.lastName}</div>}
+          </div>
+          <div>
+            <input
+              type="text"
+              placeholder="Email*"
+              name="email"
+              value={formState.email}
+              className={`h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80 ${errorMessages.email ? 'border-red-500' : ''}`}
+              onChange={handleInputChange}
+            />
+            {errorMessages.email && <div className="text-red-500">{errorMessages.email}</div>}
+          </div>
+          <div>
+            <input
+              type="number"
+              placeholder="Phone"
+              name="phone"
+              value={formState.phone}
+              className="h-[49px] w-[380px] rounded border border-[#B5B5B5] pl-4 focus:border-[#00A79D] focus:outline-none max-md:w-80"
+              onChange={handleInputChange}
+            />
+          </div>
+          <div className="w-full">
+            <textarea
+              name="message"
+              placeholder="Availability*"
+              value={formState.message}
+              className={`h-[120px] w-[100%] rounded border border-[#B5B5B5] pl-4 pt-4 focus:border-[#00A79D] focus:outline-none max-md:w-80 ${errorMessages.message ? 'border-red-500' : ''}`}
+              onChange={handleInputChange}
+            ></textarea>
+            {errorMessages.message && <div className="text-red-500">{errorMessages.message}</div>}
+          </div>
         </div>
         <div className="mt-4 flex justify-between max-md:flex-col-reverse max-md:gap-3">
           <button
-            onClick={() => fileInputRef.current && fileInputRef.current.click()} // Trigger file input click
+            onClick={() => fileInputRef.current && fileInputRef.current.click()}
             className="flex items-center rounded border border-[#00A79D] px-5 py-3 !text-[#00A791] max-md:w-full"
           >
             <img src="/images/icons/attachments.svg" alt="Attachment Icon" /> Attachments
@@ -200,7 +268,8 @@ const VacancyInfo: FC = () => {
             className="bg-[#009462] px-5 py-3 hover:bg-[#008054] max-md:w-full"
           />
         </div>
-        <div className='text-start mt-2'>{attachmentName}</div>
+        <div className="mt-2 text-start">{attachmentName}</div>
+        {globalError && <span className="text-red-500">{globalError}</span>}
       </div>
       <input
         type="file"

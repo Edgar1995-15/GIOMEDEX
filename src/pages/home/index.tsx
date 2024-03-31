@@ -55,7 +55,7 @@ const Home: FC = () => {
             ))}
           </div>
         </div>
-        <div className="flex gap-4 max-md:flex-col max-md:gap-3">
+        <div className="flex gap-4 max-md:flex-col max-md:gap-3 w-full">
             <Button
               name="Our Services"
               className={`h-[54px] w-[172px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:hidden`}
@@ -67,15 +67,16 @@ const Home: FC = () => {
               className={`h-[54px] w-[172px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] max-md:hidden`}
               icon="arrowRight"
               onClick={() => navigate('/for-partners')}
+              isSpecial
             />
             <Button
               name="Our Services"
-              className={`h-[54px] w-[324px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
+              className={`h-[54px] w-full items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] hidden max-md:flex !justify-center`}
               onClick={() => navigate('/Services')}
             />
             <Button
               name="For Partners"
-              className={`h-[54px] w-[324px] items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
+              className={`h-[54px] w-full items-center border border-white px-[20px] py-[16px] hover:border-[#008054] hover:text-[#008054] hidden max-md:flex !justify-center`}
               onClick={() => navigate('/for-partners')}
             />
           </div>

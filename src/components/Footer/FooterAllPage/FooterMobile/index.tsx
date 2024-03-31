@@ -7,31 +7,31 @@ import Contact from '../../../Contact';
 const pages = [
   {
     page: 'Home',
-    url: '/'
+    url: ''
   },
   {
     page: 'Company',
-    url: '/company'
+    url: 'company'
   },
   {
     page: 'Services',
-    url: '/services'
+    url: 'services'
   },
   {
     page: 'CDISC',
-    url: '/CDISC'
+    url: 'CDISC'
   },
   {
     page: 'Quality Policy',
-    url: '/quality-policy'
+    url: 'quality-policy'
   },
   {
     page: 'For Partners',
-    url: '/for-partners'
+    url: 'for-partners'
   },
   {
     page: 'Contact us',
-    url: '/contact-us'
+    url: 'contact'
   }
 ];
 
@@ -73,7 +73,7 @@ const FooterMobile = () => {
               className={
                 'text-wrap bg-transparent text-center text-[14px] font-bold leading-[16.94px]'
               }
-              onClick={() => navigate('/Company')}
+              onClick={() => navigate(`/${el}`)}
             />
           ))}
         </div>

@@ -42,6 +42,7 @@ const Hero = () => {
             icon="select"
             iconClassName={`w-[24px] h-[24px]`}
             onClick={() => navigate('/for-partners')}
+            isSpecial
           />
         </div>
       </div>

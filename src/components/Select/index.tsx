@@ -56,7 +56,7 @@ const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) =>
       />
       {name === selectOpen && (
         <div
-          className="absolute mt-[34px] h-fit  w-[308px] rounded-b bg-[#0B1521] p-[12px]"
+          className="absolute mt-[34px] h-fit w-[308px] rounded-b bg-[#0B1521] p-[12px] max-xl:w-[270px] max-lg:w-[240px] max-lg:p-[9px]"
           ref={selectRef}
         >
           {selectInfo.map((el, index) => (
@@ -78,7 +78,7 @@ const Select: FC<ISelect> = ({ name, selectInfo, setSelectOpen, selectOpen }) =>
           ))}
           {!!childrenInfo && (
             <div
-              className={`absolute left-[308px] top-0 h-fit w-[308px] rounded-b bg-[#0B1521] p-[12px]`}
+              className={`absolute left-[308px] top-0 h-fit w-[308px] rounded-b bg-[#0B1521] p-[12px] max-xl:left-[270px] max-xl:w-[270px] max-lg:left-[240px] max-lg:w-[240px]`}
             >
               {childrenInfo.map((el, index) => {
                 return (

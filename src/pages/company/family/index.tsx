@@ -28,7 +28,7 @@ const Family: FC = () => {
       <div className="mt-9 flex justify-center gap-9 max-md:pb-9 max-md:hidden">
         <Card
           avatar="/images/avatars/paul.png"
-          name="Michaelis, Paul"
+          name="Stephanie Schwarz"
           subtitle="Board Member, Leipzig, Germany."
           text="Leads the board in setting strategic goals and objectives to ensure the company's growth and success in the field of clinical data management, statistics, and bio- informatics."
         />
@@ -49,7 +49,7 @@ const Family: FC = () => {
       <CarouselSlider className='mt-9 flex justify-center flex-col m-a max-md:pb-9'>
       <Card
           avatar="/images/avatars/paul.png"
-          name="Michaelis, Paul"
+          name="Stephanie Schwarz"
           subtitle="Board Member, Leipzig, Germany."
           className='m-auto'
           text="Leads the board in setting strategic goals and objectives to ensure the company's growth and success in the field of clinical data management, statistics, and bio- informatics."

@@ -75,12 +75,10 @@ const VacancyInfo: FC = () => {
           .then((response) => {
             console.log('Email sent successfully!', response);
             setConfirmPopup(true);
-            // Add any success message or redirect to a thank you page
           })
           .catch((error) => {
             console.error('Email sending failed:', error);
             setGlobalError(error.text);
-            // Handle error, show error message, etc.
           });
       };
     } else {
@@ -90,11 +88,9 @@ const VacancyInfo: FC = () => {
         .then((response) => {
           console.log('Email sent successfully!', response);
           setConfirmPopup(true);
-          // Add any success message or redirect to a thank you page
         })
         .catch((error) => {
           console.error('Email sending failed:', error);
-          // Handle error, show error message, etc.
         });
     }
   };

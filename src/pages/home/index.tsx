@@ -8,7 +8,7 @@ const Home: FC = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="flex h-[calc(100vh_-_166px)] w-screen justify-center bg-[url('/public/images/backgroundImages/home-background.jpeg')] bg-cover bg-center max-lg:min-h-[calc(100vh_+_250px)] max-md:h-[calc(100vh_-_150px)]">
+    <div className="flex h-[calc(100vh_-_166px)] w-screen justify-center bg-[url('/public/images/backgroundImages/home-background.jpeg')] bg-cover bg-center max-lg:min-h-[calc(100vh_+_250px)] max-md:min-h-[calc(100vh__50px)]">
       <div className="flex w-[1440px] flex-col p-[120px] max-xl:p-[80px] max-lg:p-[50px] max-md:items-center max-md:p-[30px]">
         <div className="flex flex-col gap-[12px] max-lg:pb-[29px]">
           <Typography

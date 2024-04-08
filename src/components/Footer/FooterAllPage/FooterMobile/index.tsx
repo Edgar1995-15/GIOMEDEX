@@ -80,7 +80,7 @@ const FooterMobile = () => {
           {contact.map((el, index) => (
             <Button
               key={index}
-              name={el}
+              name={el.name}
               className={
                 'text-wrap bg-transparent text-center text-[14px] font-bold leading-[16.94px]'
               }

@@ -2,8 +2,10 @@ import { FC } from 'react';
 import Button from '../../../components/Button';
 import data from '../data.json';
 import Typography from '../../../components/Typography';
+import { useNavigate } from 'react-router-dom';
 
 const Vacancies: FC = () => {
+  const navigate = useNavigate();
   return (
     <div
       id='vacancies'
@@ -26,7 +28,7 @@ const Vacancies: FC = () => {
           name="Vacancies"
           className={`mt-6 h-[54px] w-[150px] items-center bg-[#009462] px-[20px] py-[16px] hover:bg-[#008054] max-md:hidden`}
           icon="arrowRight"
-          onClick={() => {}}
+          onClick={() => {navigate(`?id=Our Vacancies`)}}
         />
         <Button
           name="Vacancies"

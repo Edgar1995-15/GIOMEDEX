@@ -10,7 +10,10 @@ const Principles: FC = () => {
   const [showMoreGio, setShowMoreGio] = useState(false);
   const navigate = useNavigate();
   return (
-    <div className="m-auto w-full max-w-[1440px] bg-white px-32 pt-12 max-md:pt-9 max-md:px-[18px]" id='principles'>
+    <div
+      className="m-auto w-full max-w-[1440px] bg-white px-32 pt-12 max-md:px-[18px] max-md:pt-9"
+      id="principles"
+    >
       <div>
         <Typography
           content={data.principles.title}
@@ -18,11 +21,7 @@ const Principles: FC = () => {
           size="text-[30px]"
           color="text-[#00707E]"
         />
-        <Typography
-          content={data.principles.content}
-          className="mt-6 leading-4"
-          color="text-[#595959]"
-        />
+        <div className='mt-6 leading-4 text-[#595959]'><span className='font-bold'>Trust, Transparency, Flexibility, Quality:</span> At GIOMEDEX, our core values guide our interactions and drive our commitment to excellence. We prioritize trust, ensuring a transparent partnership that adapts to our clients' needs with flexibility, all while maintaining an unwavering focus on delivering quality work.</div>
       </div>
       <div className="mt-9 flex w-full justify-between gap-10 max-md:flex-col">
         <div>
@@ -61,24 +60,53 @@ const Principles: FC = () => {
             />
           </div>
           <div className="mt-4 flex max-w-[542px] flex-col gap-9 text-[#595959] max-md:gap-3">
-            <Typography content={data.whyGiomedex.content1} className="text-justify" />
-            <Typography content={data.whyGiomedex.content2} className="text-justify" />
-            <Typography
-              content={data.whyGiomedex.content3}
-              className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}
-            />
-            <Typography
-              content={data.whyGiomedex.content4}
-              className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}
-            />
-            <Typography
-              content={data.whyGiomedex.content5}
-              className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}
-            />
-            <Typography
-              content={data.whyGiomedex.content6}
-              className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}
-            />
+            <div className="text-justify">
+              <span className="font-bold">Cost-Effective Solutions:</span>
+              <span>
+                We offer competitive rates that deliver maximum value without compromising on
+                quality. For clients opting to work with R instead of SAS, we have implemented a
+                major savings plan that allows them to achieve significant cost savings while still
+                receiving top-notch service.
+              </span>
+            </div>
+            <div className="text-justify">
+              <span className="font-bold">Compliance and Security: </span>
+              <span>
+                We prioritize data protection regulations and maintain rigorous information security
+                measures. With all necessary SOPs in place and multiple client audits under our
+                belt, you can trust us to safeguard your data.
+              </span>
+            </div>
+            <div className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}>
+              <span className="font-bold">Flexible Contract Negotiations: </span>
+              <span>
+                We're known for our cooperative approach to contract negotiations, ensuring a smooth
+                and mutually beneficial process.
+              </span>
+            </div>
+            <div className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}>
+              <span className="font-bold">Global Reach: </span>
+              <span>
+                With entities in the EU, US, Mexico and the Caucasus Region, we offer global
+                expertise and support tailored to your needs.
+              </span>
+            </div>
+            <div className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}>
+              <span className="font-bold">Client Satisfaction: </span>
+              <span>
+                Our track record speaks for itself. References from our satisfied clients are
+                available upon request, demonstrating our commitment to excellence and customer
+                satisfaction.
+              </span>
+            </div>
+            <div className={`text-justify ${showMoreGio ? 'max-md:block' : 'max-md:hidden'}`}>
+              <span className="font-bold">Value Creation: </span>
+              <span>
+                By ensuring data accuracy, compliance with regulatory standards, and timely delivery
+                of insights, we empower our clients to make informed decisions, accelerate drug
+                development timelines, and ultimately improve patient outcomes.
+              </span>
+            </div>
             {!showMoreGio && (
               <span
                 className="hidden text-[#00946299] underline max-md:block"

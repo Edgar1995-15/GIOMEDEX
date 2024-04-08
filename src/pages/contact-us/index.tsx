@@ -24,7 +24,7 @@ const ContactUs: FC = () => {
     message: ''
   });
   const [errorMessages, setErrorMessages] = useState<Partial<FormState>>({});
-  const [confirmPopup, setConfirmPopup] = useState<boolean>(false);
+  // const [confirmPopup, setConfirmPopup] = useState<boolean>(false);
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormState({
@@ -71,7 +71,7 @@ const ContactUs: FC = () => {
         .send('service_fouvyws', 'template_eexz5kz', templateParams, 'gU6BimkgtWxvEZv0P')
         .then((response) => {
           console.log('Email sent successfully!', response);
-          setConfirmPopup(true);
+          // setConfirmPopup(true);
         })
         .catch((error) => {
           console.error('Email sending failed:', error);
